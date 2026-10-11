@@ -838,3 +838,12 @@ video{max-width:100%;border-radius:var(--radius);width:100%}
 .prose .in-short{background:var(--sand);border-radius:.75rem;padding:.75rem 1rem}
 .prose address{font-style:normal;margin-bottom:1rem}
 .legal-toc ol{list-style:none;padding-left:0}
+.on-dark .pkg-panel,.on-dark .testi{color:var(--ink)}
+.on-dark .pkg-panel .pkg-price{color:var(--teal)}
+.on-dark .pkg-panel a:not(.btn),.on-dark .testi a:not(.btn){color:var(--teal)}
+.on-dark .pkg-panel .note,.on-dark .testi .note{color:var(--ink-soft)}
+.on-dark .testi .expand-btn{color:var(--teal)}
+.on-dark .pkg-panel .text-link,.on-dark .testi .text-link{color:var(--coral-ink)}
+.on-dark .prose{color:var(--teal-ink)}
+.on-dark .prose h2,.on-dark .prose h3{color:#fff}
+.on-dark .prose a{color:#fff}
