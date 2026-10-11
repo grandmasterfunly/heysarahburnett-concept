@@ -1,0 +1,17 @@
+{
+  "name": "heysarahburnett-concept",
+  "private": true,
+  "type": "module",
+  "description": "Static concept site (noindex). Dev dependencies are only for the accessibility CI.",
+  "scripts": {
+    "serve": "http-server . -p 8080 -s",
+    "test:a11y": "node ci/a11y-mobile.mjs && node ci/a11y-pages.mjs && pa11y-ci --config .pa11yci.json"
+  },
+  "devDependencies": {
+    "axe-core": "^4.14.0",
+    "http-server": "^14.1.1",
+    "pa11y-ci": "^5.0.0",
+    "playwright": "^1.64.0",
+    "wait-on": "^9.5.1"
+  }
+}

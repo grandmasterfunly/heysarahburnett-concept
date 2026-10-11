@@ -1,0 +1,25 @@
+# Copy of the a11y GitHub Actions workflow. To activate it, move this file to .github/workflows/a11y.yml
+# (pushing workflow files needs a token with the `workflow` scope).
+name: Accessibility
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  a11y:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20, cache: npm }
+      - run: npm ci
+      - name: Serve site (repo root is the site)
+        run: npx http-server . -p 8080 -s &
+      - run: npx wait-on http://localhost:8080/index.html
+      - run: npx playwright install --with-deps chromium
+      - name: axe-core on the home page (390px + 1440px, reduced motion, menu/tab/lightbox states)
+        run: node ci/a11y-mobile.mjs
+      - name: axe-core on every inner page (390px + 1440px, menu, tabs, read-more, expanders, flip cards)
+        run: node ci/a11y-pages.mjs
+      - name: pa11y-ci (HTML_CodeSniffer, WCAG2AA) on every page, desktop + mobile
+        run: npx pa11y-ci --config .pa11yci.json

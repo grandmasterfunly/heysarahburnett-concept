@@ -1,0 +1,226 @@
+{
+  "defaults": {
+    "standard": "WCAG2AA",
+    "runners": [
+      "htmlcs"
+    ],
+    "timeout": 60000,
+    "wait": 4500,
+    "chromeLaunchConfig": {
+      "args": [
+        "--no-sandbox"
+      ]
+    },
+    "ignore": []
+  },
+  "urls": [
+    "http://localhost:8080/index.html",
+    {
+      "url": "http://localhost:8080/index.html",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "isMobile": true
+      }
+    },
+    "http://localhost:8080/accessibility.html",
+    "http://localhost:8080/about.html",
+    {
+      "url": "http://localhost:8080/about.html",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "isMobile": true
+      }
+    },
+    "http://localhost:8080/blog.html",
+    {
+      "url": "http://localhost:8080/blog.html",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "isMobile": true
+      }
+    },
+    "http://localhost:8080/contact.html",
+    {
+      "url": "http://localhost:8080/contact.html",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "isMobile": true
+      }
+    },
+    "http://localhost:8080/corporate-wellness.html",
+    {
+      "url": "http://localhost:8080/corporate-wellness.html",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "isMobile": true
+      }
+    },
+    "http://localhost:8080/empowered-parent-coaching.html",
+    {
+      "url": "http://localhost:8080/empowered-parent-coaching.html",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "isMobile": true
+      }
+    },
+    "http://localhost:8080/events.html",
+    {
+      "url": "http://localhost:8080/events.html",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "isMobile": true
+      }
+    },
+    "http://localhost:8080/laser-soul-coaching.html",
+    {
+      "url": "http://localhost:8080/laser-soul-coaching.html",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "isMobile": true
+      }
+    },
+    "http://localhost:8080/leadership-future-success-coaching.html",
+    {
+      "url": "http://localhost:8080/leadership-future-success-coaching.html",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "isMobile": true
+      }
+    },
+    "http://localhost:8080/past-life-regression-therapy.html",
+    {
+      "url": "http://localhost:8080/past-life-regression-therapy.html",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "isMobile": true
+      }
+    },
+    "http://localhost:8080/plans-pricing.html",
+    {
+      "url": "http://localhost:8080/plans-pricing.html",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "isMobile": true
+      }
+    },
+    "http://localhost:8080/podcast.html",
+    {
+      "url": "http://localhost:8080/podcast.html",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "isMobile": true
+      }
+    },
+    "http://localhost:8080/privacy.html",
+    {
+      "url": "http://localhost:8080/privacy.html",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "isMobile": true
+      }
+    },
+    "http://localhost:8080/psychedelic-integration-coaching.html",
+    {
+      "url": "http://localhost:8080/psychedelic-integration-coaching.html",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "isMobile": true
+      }
+    },
+    "http://localhost:8080/resources.html",
+    {
+      "url": "http://localhost:8080/resources.html",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "isMobile": true
+      }
+    },
+    "http://localhost:8080/retreats.html",
+    {
+      "url": "http://localhost:8080/retreats.html",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "isMobile": true
+      }
+    },
+    "http://localhost:8080/services.html",
+    {
+      "url": "http://localhost:8080/services.html",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "isMobile": true
+      }
+    },
+    "http://localhost:8080/shop.html",
+    {
+      "url": "http://localhost:8080/shop.html",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "isMobile": true
+      }
+    },
+    "http://localhost:8080/speaking.html",
+    {
+      "url": "http://localhost:8080/speaking.html",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "isMobile": true
+      }
+    },
+    "http://localhost:8080/terms.html",
+    {
+      "url": "http://localhost:8080/terms.html",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "isMobile": true
+      }
+    },
+    "http://localhost:8080/testimonials.html",
+    {
+      "url": "http://localhost:8080/testimonials.html",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "isMobile": true
+      }
+    },
+    "http://localhost:8080/transformational-mindset-coaching.html",
+    {
+      "url": "http://localhost:8080/transformational-mindset-coaching.html",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "isMobile": true
+      }
+    },
+    "http://localhost:8080/yoga-event.html",
+    {
+      "url": "http://localhost:8080/yoga-event.html",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "isMobile": true
+      }
+    }
+  ]
+}
