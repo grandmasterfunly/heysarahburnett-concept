@@ -817,3 +817,6 @@ video{max-width:100%;border-radius:var(--radius);width:100%}
 .res-list li{border-bottom:1px solid rgba(28,27,41,.14)}
 .res-list a svg{display:inline-block;width:14px;height:14px}
 .contact-cards h3 a{color:inherit;word-break:break-word}
+.quote-cards .card{position:relative}
+.quote-cards .q-mark{font-family:var(--display);font-size:3.5rem;line-height:.6;color:var(--coral)}
+.quote-cards blockquote{margin:0 0 .75rem;font-family:var(--display);font-size:1.25rem;line-height:1.35}
