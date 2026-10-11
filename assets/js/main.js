@@ -33,16 +33,13 @@ let lastY = scrollY;
 function onScroll() {
   const y = scrollY;
   header.classList.toggle('is-solid', y > 40);
-  const menuOpen = $('#menu').open;
-  header.classList.toggle('is-hidden', !menuOpen && y > 600 && y > lastY + 4 && !header.contains(document.activeElement));
-  if (y < lastY - 4) header.classList.remove('is-hidden');
   lastY = y;
   const h = document.documentElement.scrollHeight - innerHeight;
   progress.style.setProperty('--p', h > 0 ? (y / h).toFixed(4) : 0);
 }
 addEventListener('scroll', () => requestAnimationFrame(onScroll), { passive: true });
 onScroll();
-header.addEventListener('focusin', () => header.classList.remove('is-hidden'));
+
 
 const navLinks = $$('.nav-desktop a');
 const sectionObs = new IntersectionObserver((entries) => {
@@ -333,9 +330,8 @@ if (finePointer.matches) {
 /* ---------- Sticky mobile CTA ---------- */
 const sticky = $('.sticky-cta');
 let heroVisible = true, contactVisible = false;
-const stickyUpdate = () => sticky.classList.toggle('is-visible', !heroVisible && !contactVisible);
+const stickyUpdate = () => sticky.classList.toggle('is-visible', !heroVisible);
 new IntersectionObserver(([e]) => { heroVisible = e.isIntersecting; stickyUpdate(); }, { threshold: 0.15 }).observe($('.hero'));
-new IntersectionObserver((es) => { contactVisible = es.some((e) => e.isIntersecting); stickyUpdate(); }).observe($('#contact'));
 // Stop the sticky bar from ever covering a focused element (WCAG 2.4.11 Focus Not Obscured)
 document.addEventListener('focusin', (e) => {
   if (sticky.contains(e.target) || !sticky.classList.contains('is-visible')) return;

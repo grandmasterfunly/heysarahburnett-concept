@@ -20,14 +20,12 @@ let lastY = scrollY;
 function onScroll() {
   const y = scrollY;
   header.classList.toggle('is-solid', y > 40);
-  header.classList.toggle('is-hidden', !menu.open && y > 600 && y > lastY + 4 && !header.contains(document.activeElement));
-  if (y < lastY - 4) header.classList.remove('is-hidden');
   lastY = y;
   const h = root.scrollHeight - innerHeight; progress.style.setProperty('--p', h > 0 ? (y / h).toFixed(4) : 0);
   parallax();
 }
 addEventListener('scroll', () => requestAnimationFrame(onScroll), { passive: true });
-header.addEventListener('focusin', () => header.classList.remove('is-hidden'));
+
 
 /* Mobile menu (native modal dialog) */
 const menuBtn = $('.menu-btn');
@@ -125,9 +123,8 @@ $$('[data-count]').forEach((el) => cntObs.observe(el));
 
 /* Sticky mobile CTA: hidden over the hero and the final CTA */
 const sticky = $('.sticky-cta'); let heroVis = true, endVis = false;
-const upd = () => sticky.classList.toggle('is-visible', !heroVis && !endVis);
+const upd = () => sticky.classList.toggle('is-visible', !heroVis);
 const hero = $('.page-hero'); if (hero) new IntersectionObserver(([e]) => { heroVis = e.isIntersecting; upd(); }, { threshold: 0.15 }).observe(hero); else { heroVis = false; upd(); }
-const end = $('.cta-band'); if (end) new IntersectionObserver(([e]) => { endVis = e.isIntersecting; upd(); }).observe(end);
 document.addEventListener('focusin', (e) => {
   if (sticky.contains(e.target) || !sticky.classList.contains('is-visible')) return;
   const r = e.target.getBoundingClientRect(); const s = sticky.getBoundingClientRect();
@@ -160,3 +157,13 @@ if (finePointer.matches) {
   }, { passive: true });
   document.addEventListener('pointerleave', () => cur.classList.remove('is-on'));
 }
+
+/* Flip cards */
+$$('.flip-btn').forEach((b) => b.addEventListener('click', () => b.setAttribute('aria-expanded', String(b.getAttribute('aria-expanded') !== 'true'))));
+
+/* Self-check lists: [data-selfcheck] with checkboxes; reveals a response once any is checked */
+$$('[data-selfcheck]').forEach((box) => {
+  const out = $('.sc-result', box); const boxes = $$('input[type="checkbox"]', box);
+  const upd = () => { const n = boxes.filter((c) => c.checked).length; out.hidden = n === 0; const c = $('.sc-count', box); if (c) c.textContent = `${n} of ${boxes.length}`; };
+  boxes.forEach((c) => c.addEventListener('change', upd)); upd();
+});
