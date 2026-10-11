@@ -152,13 +152,24 @@ addEventListener('scroll', () => requestAnimationFrame(frame), { passive: true }
 document.addEventListener('motionchange', frame);
 frame();
 
+/* Scroll only the horizontal strip that contains el (never the page): no scrollIntoView. */
+export function centerInStrip(el) {
+  let strip = el.parentElement;
+  while (strip && strip !== document.body && !(strip.scrollWidth > strip.clientWidth + 1 && /(auto|scroll)/.test(getComputedStyle(strip).overflowX))) strip = strip.parentElement;
+  if (!strip || strip === document.body) return;
+  const sr = strip.getBoundingClientRect(), er = el.getBoundingClientRect();
+  const left = strip.scrollLeft + (er.left - sr.left) - (strip.clientWidth - er.width) / 2;
+  strip.scrollTo({ left: Math.max(0, left), behavior: motionOK() ? 'smooth' : 'auto' });
+}
+window.__centerInStrip = centerInStrip;
+
 /* ---------- Accessible tabs helper (roving tabindex + swipe) ---------- */
 export function tabs(tabEls, onSelect, { swipeTargets = [] } = {}) {
   const select = (i, focus = true) => {
     i = (i + tabEls.length) % tabEls.length;
     tabEls.forEach((t, j) => { const on = i === j; t.setAttribute('aria-selected', String(on)); t.tabIndex = on ? 0 : -1; });
-    if (focus) tabEls[i].focus();
-    tabEls[i].scrollIntoView({ block: 'nearest', inline: 'center', behavior: motionOK() ? 'smooth' : 'auto' });
+    if (focus) tabEls[i].focus({ preventScroll: true });
+    centerInStrip(tabEls[i]);
     onSelect(i);
   };
   tabEls.forEach((t, i) => {
@@ -285,7 +296,7 @@ function openLB(tile) {
   lbItems = tile.hasAttribute('data-solo') ? [tile] : $$('#masonry li:not([hidden]) .tile');
   lbIndex = Math.max(0, lbItems.indexOf(tile));
   renderLB(); lb.showModal(); document.body.style.overflow = 'hidden';
-  $('.lb-close', lb).focus();
+  $('.lb-close', lb).focus({ preventScroll: true });
 }
 const step = (d) => { lbIndex = (lbIndex + d + lbItems.length) % lbItems.length; renderLB(); };
 $$('.tile[data-lb]').forEach((t) => t.addEventListener('click', () => openLB(t)));
@@ -293,7 +304,7 @@ $('.lb-close', lb).addEventListener('click', () => lb.close());
 $('.lb-prev', lb).addEventListener('click', () => step(-1));
 $('.lb-next', lb).addEventListener('click', () => step(1));
 lb.addEventListener('keydown', (e) => { if (e.target.tagName === 'VIDEO') return; if (e.key === 'ArrowRight') step(1); if (e.key === 'ArrowLeft') step(-1); });
-lb.addEventListener('close', () => { stage.innerHTML = ''; document.body.style.overflow = ''; opener && opener.focus(); });
+lb.addEventListener('close', () => { stage.innerHTML = ''; document.body.style.overflow = ''; opener && opener.focus({ preventScroll: true }); });
 lb.addEventListener('click', (e) => { if (e.target === stage) lb.close(); });
 onSwipe(stage, (d) => lbItems.length > 1 && step(d));
 
@@ -347,3 +358,22 @@ form.addEventListener('submit', (e) => {
   status.textContent = `Thank you, ${n}! Your email app will open so you can send the request to Sarah.`;
   location.href = `mailto:sarah@heysarahburnett.com?subject=${encodeURIComponent('Free guided visualization')}&body=${encodeURIComponent(`Hi Sarah, I'd love the free guided visualization.\n\nName: ${n}\nEmail: ${em}`)}`;
 });
+
+/* ---------- Read more (mobile long-copy clamp; content is never removed) ---------- */
+const clampMQ = matchMedia('(max-width: 47.99rem)');
+function evalClamp(el) {
+  const btn = el.nextElementSibling;
+  if (el.classList.contains('is-open') || !el.offsetParent) return;
+  el.classList.add('is-clampable');
+  const over = clampMQ.matches && el.scrollHeight > el.clientHeight + 2;
+  el.classList.toggle('is-clampable', over);
+}
+const clampRO = 'ResizeObserver' in window ? new ResizeObserver((ents) => ents.forEach((e) => evalClamp(e.target))) : null;
+$$('[data-clamp]').forEach((el) => {
+  const btn = el.nextElementSibling;
+  if (!btn || !btn.classList.contains('read-more')) return;
+  btn.addEventListener('click', () => { const open = el.classList.toggle('is-open'); btn.setAttribute('aria-expanded', String(open)); btn.textContent = open ? 'Show less' : 'Read more'; });
+  clampRO ? clampRO.observe(el) : evalClamp(el);
+});
+const recheckClamps = () => $$('[data-clamp]').forEach(evalClamp);
+clampMQ.addEventListener('change', recheckClamps); addEventListener('load', recheckClamps);

@@ -1,7 +1,22 @@
 <!doctype html>
 <html lang="en">
 <head><meta charset="utf-8">
-<meta name="robots" content="noindex, nofollow"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<script>
+/* Always open at the very top unless the URL targets a section (#hash).
+   Browsers restore the previous scroll position on reload, back/forward and reopened tabs; with lazy media
+   still loading, that restore lands late and looks like the page "jumps" down. */
+(function(){
+  if (location.hash) return;
+  try { history.scrollRestoration = 'manual'; } catch (e) {}
+  var touched = false;
+  ['wheel','touchstart','keydown','pointerdown'].forEach(function(t){ addEventListener(t, function(){ touched = true; }, { once: true, passive: true, capture: true }); });
+  function top(){ if (touched || location.hash || !(scrollX || scrollY)) return; var h = document.documentElement, b = h.style.scrollBehavior; h.style.scrollBehavior = 'auto'; window.scrollTo(0, 0); h.style.scrollBehavior = b; }
+  document.addEventListener('DOMContentLoaded', top);
+  addEventListener('load', function(){ top(); setTimeout(top, 0); });
+  addEventListener('pageshow', function(e){ if (e.persisted) top(); });
+})();
+</script><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Accessibility Statement | Sarah Burnett</title>
 <link rel="icon" href="assets/img/favicon.png"><link rel="stylesheet" href="assets/css/main.css">
 <style>.site-header{background:var(--cream)}.site-header .brand img{filter:none!important}.doc{padding-top:calc(var(--header-h) + 3rem)}</style>

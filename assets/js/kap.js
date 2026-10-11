@@ -38,7 +38,7 @@ async function startPlayer(seek = 0) {
         ready = true; facade.remove();
         const ifr = e.target.getIframe(); ifr.title = 'Therapy Unfiltered episode 107: Ketamine-Assisted Psychotherapy with Dr. Eric Milbrandt (YouTube video player)';
         if (pendingSeek) e.target.seekTo(pendingSeek, true);
-        e.target.playVideo(); ifr.focus();
+        e.target.playVideo(); ifr.focus({ preventScroll: true });
       },
       onStateChange: (e) => { clearInterval(pollId); if (e.data === 1) pollId = setInterval(sync, 500); },
     },
@@ -55,13 +55,14 @@ CHAPTERS.forEach(([t, title]) => {
 });
 const chapBtns = $$('.chapter', chapList);
 chapBtns.forEach((b) => b.addEventListener('click', () => { startPlayer(+b.dataset.t); setChapter(+b.dataset.t); }));
-$$('[data-seek]').forEach((a) => a.addEventListener('click', (e) => { e.preventDefault(); shell.scrollIntoView({ behavior: motionOK() ? 'smooth' : 'auto', block: 'center' }); startPlayer(+a.dataset.seek); }));
+$$('[data-seek]').forEach((a) => a.addEventListener('click', (e) => { e.preventDefault(); { const r = shell.getBoundingClientRect(); window.scrollTo({ top: Math.max(0, scrollY + r.top - (innerHeight - r.height) / 2), behavior: motionOK() ? 'smooth' : 'auto' }); } startPlayer(+a.dataset.seek); }));
 function setChapter(t) {
   let idx = 0; CHAPTERS.forEach(([s], i) => { if (t >= s) idx = i; });
   chapBtns.forEach((b, i) => (i === idx ? b.setAttribute('aria-current', 'true') : b.removeAttribute('aria-current')));
   const b = chapBtns[idx]; const strip = chapList;
-  const target = b.parentElement.offsetLeft - strip.clientWidth / 2 + b.clientWidth / 2;
-  strip.scrollTo({ left: target, behavior: motionOK() ? 'smooth' : 'auto' });
+  if (strip.scrollWidth <= strip.clientWidth + 1) return;
+  const sr = strip.getBoundingClientRect(), br = b.getBoundingClientRect();
+  strip.scrollTo({ left: Math.max(0, strip.scrollLeft + (br.left - sr.left) - (strip.clientWidth - br.width) / 2), behavior: motionOK() ? 'smooth' : 'auto' });
 }
 
 /* ---------- Transcript ---------- */
@@ -106,7 +107,7 @@ function sync() {
   if (idx === activeIdx || idx < 0) return;
   lines[activeIdx]?.classList.remove('is-active'); lines[activeIdx]?.removeAttribute('aria-current');
   activeIdx = idx; const li = lines[idx]; li.classList.add('is-active'); li.setAttribute('aria-current', 'true');
-  if (follow.checked && !search.value && !body.contains(document.activeElement)) body.scrollTo({ top: li.offsetTop - body.clientHeight / 3, behavior: motionOK() ? 'smooth' : 'auto' });
+  if (follow.checked && !search.value && !body.contains(document.activeElement)) body.scrollTo({ top: body.scrollTop + (li.getBoundingClientRect().top - body.getBoundingClientRect().top) - body.clientHeight / 3, behavior: motionOK() ? 'smooth' : 'auto' });
 }
 
 /* ---------- Myth / fact flip cards ---------- */
@@ -132,7 +133,7 @@ const showStep = (i) => {
 };
 const selectStep = window.__tabs(jTabs, showStep, { swipeTargets: jPanels });
 jPrev.addEventListener('click', () => selectStep(Math.max(0, jCur - 1), false));
-jNext.addEventListener('click', () => { selectStep(Math.min(jPanels.length - 1, jCur + 1), false); if (jCur === jPanels.length - 1) jPanels[jCur].focus(); });
+jNext.addEventListener('click', () => { selectStep(Math.min(jPanels.length - 1, jCur + 1), false); if (jCur === jPanels.length - 1) jPanels[jCur].focus({ preventScroll: true }); });
 showStep(0);
 
 /* ---------- Rewire: a neuron-tree grows with the slider (and once on scroll if motion is allowed) ---------- */
