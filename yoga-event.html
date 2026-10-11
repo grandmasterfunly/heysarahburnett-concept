@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<script>
+/* Always open at the very top unless the URL targets a section (#hash).
+   Browsers restore the previous scroll position on reload, back/forward and reopened tabs; with lazy media
+   still loading, that restore lands late and looks like the page "jumps" down. */
+(function(){
+  if (location.hash) return;
+  try { history.scrollRestoration = 'manual'; } catch (e) {}
+  var touched = false;
+  ['wheel','touchstart','keydown','pointerdown'].forEach(function(t){ addEventListener(t, function(){ touched = true; }, { once: true, passive: true, capture: true }); });
+  function top(){ if (touched || location.hash || !(scrollX || scrollY)) return; var h = document.documentElement, b = h.style.scrollBehavior; h.style.scrollBehavior = 'auto'; window.scrollTo(0, 0); h.style.scrollBehavior = b; }
+  document.addEventListener('DOMContentLoaded', top);
+  addEventListener('load', function(){ top(); setTimeout(top, 0); });
+  addEventListener('pageshow', function(e){ if (e.persisted) top(); });
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Yoga with Sarah: Details Coming Soon | Sarah Burnett, LMHC</title>
+<meta name="description" content="An upcoming yoga event with Sarah Burnett. Date, time, location and pricing coming soon.">
+<meta name="theme-color" content="#082f33">
+<link rel="icon" href="assets/img/favicon.png">
+<meta property="og:title" content="Yoga with Sarah: Details Coming Soon | Sarah Burnett">
+<meta property="og:description" content="An upcoming yoga event with Sarah Burnett. Date, time, location and pricing coming soon.">
+<meta property="og:image" content="assets/img/sarah-pink-chair-1200.webp">
+<meta property="og:type" content="website">
+<link rel="preload" href="assets/fonts/cormorant-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/manrope-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/main.css">
+<script>document.documentElement.classList.replace('no-js','js');try{if(localStorage.getItem('sb-motion')==='off')document.documentElement.classList.add('no-motion')}catch(e){}</script>
+</head>
+<body class="subpage page-yoga-event">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-right" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5v15l13-7.5z" fill="currentColor"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 24 24"><path d="M7 4h4v16H7zM13 4h4v16h-4z" fill="currentColor"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-ext" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 01-1 1H5a1 1 0 01-1-1V7a1 1 0 011-1h5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-volume" viewBox="0 0 24 24"><path d="M4 9v6h4l5 4V5L8 9zM16 9a4 4 0 010 6M18.5 6.5a8 8 0 010 11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+<div class="progress" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"><span class="cursor-label"></span></div>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header" id="top">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Sarah Burnett, home">
+      <img src="assets/img/logo-507.png" srcset="assets/img/logo-507.webp" width="507" height="171" alt="Sarah Burnett">
+    </a>
+    <nav class="nav-desktop" aria-label="Primary">
+      <a href="index.html#about">About</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#kap">KAP</a>
+      <a href="index.html#retreats">Retreats</a>
+      <a href="events.html" aria-current="page">Events</a>
+      <a href="index.html#podcast">Podcast</a>
+      <a href="shop.html">Shop</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn--coral btn--sm header-cta magnetic" href="https://www.heysarahburnett.com/contact">Book a free call</a>
+      <button class="menu-btn" type="button" aria-controls="menu" aria-label="Open menu"><span aria-hidden="true"></span></button>
+    </div>
+  </div>
+</header>
+
+<dialog class="menu-dialog" id="menu" aria-label="Site menu">
+  <div class="menu-inner">
+    <div class="menu-top">
+      <img src="assets/img/logo-507.png" width="507" height="171" alt="">
+      <button class="menu-close" type="button" aria-label="Close menu"><svg width="22" height="22" aria-hidden="true"><use href="#i-close"/></svg></button>
+    </div>
+    <nav aria-label="Mobile">
+      <ul class="menu-list menu-list--compact">
+        <li><a href="index.html"><small>00</small>Home</a></li>
+        <li><a href="index.html#about"><small>01</small>About Sarah</a></li>
+        <li><a href="index.html#services"><small>02</small>Work with me</a></li>
+        <li><a href="index.html#kap"><small>03</small>Ketamine-assisted therapy</a></li>
+        <li><a href="index.html#retreats"><small>04</small>Retreats</a></li>
+        <li><a href="events.html" aria-current="page"><small>05</small>Yoga & events</a></li>
+        <li><a href="index.html#podcast"><small>06</small>Podcast</a></li>
+        <li><a href="shop.html"><small>07</small>Shop dōTERRA</a></li>
+        <li><a href="index.html#contact"><small>08</small>Contact</a></li>
+      </ul>
+      <h2 class="menu-sub">Offerings</h2><ul class="menu-offers"><li><a href="transformational-mindset-coaching.html">Transformational Mindset Coaching</a></li><li><a href="psychedelic-integration-coaching.html">Psychedelic Integration Coaching</a></li><li><a href="past-life-regression-therapy.html">Past-Life Regression Therapy</a></li><li><a href="empowered-parent-coaching.html">Empowered Parent Coaching</a></li><li><a href="leadership-future-success-coaching.html">Leadership & Future Success Coaching</a></li><li><a href="laser-soul-coaching.html">Laser Soul Coaching</a></li></ul>
+    </nav>
+    <div class="menu-foot">
+      <a class="btn btn--coral" href="https://www.heysarahburnett.com/contact">Book a free 20-min discovery call <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <a class="btn btn--ghost" href="tel:+14072748727" style="--fg:#fff"><svg aria-hidden="true"><use href="#i-phone"/></svg> (407) 274-8727</a>
+    </div>
+  </div>
+</dialog>
+
+<main id="main" tabindex="-1">
+<!-- Event specifics intentionally left as "coming soon" placeholders: her events page is currently empty. Fill in date/time/location/price/registration link when Sarah confirms. -->
+<section class="page-hero" aria-labelledby="ph-title">
+  <div class="ph-media" data-parallax="0.12" style="--focus:50% 40%"><img src="assets/img/poster-warehaus-retreat-720.webp" alt="" width="720" height="400" fetchpriority="high"></div>
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li><a href="events.html">Yoga &amp; events</a></li><li><span aria-current="page">Yoga with Sarah</span></li></ol></nav>
+    <p class="eyebrow">Upcoming event</p>
+    <h1 id="ph-title">Yoga with Sarah</h1>
+    <p class="lede">Breath, movement and a guided meditation, held in a safe and welcoming space for people of all genders, gender expressions, sexualities, races, ethnicities, ages, sizes, religions, and abilities.</p>
+    <ul class="ph-chips"><li>All levels</li><li>Details coming soon</li></ul>
+    <div class="btn-row"><a class="btn btn--coral magnetic" href="mailto:sarah@heysarahburnett.com?subject=Notify%20me%3A%20Yoga%20with%20Sarah">Notify me when it's live <svg aria-hidden="true"><use href="#i-arrow"/></svg></a><a class="btn btn--ghost" href="#details">Event details</a></div>
+  </div>
+</section>
+
+<section class="section" id="details" aria-labelledby="d-title">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Save the date</p><h2 id="d-title">Event <em class="script">details</em></h2><p>Sarah is finalizing the details. Check back soon, or ask to be notified.</p></div>
+    <dl class="event-facts">
+      <div><dt>Date</dt><dd><span class="soon">Coming soon</span></dd></div>
+      <div><dt>Time</dt><dd><span class="soon">Coming soon</span></dd></div>
+      <div><dt>Location</dt><dd><span class="soon">Coming soon</span></dd></div>
+      <div><dt>Price</dt><dd><span class="soon">Coming soon</span></dd></div>
+    </dl>
+    <div class="btn-row" style="margin-top:1.5rem"><button class="btn" type="button" disabled aria-describedby="reg-note">Registration opens soon</button><span id="reg-note" class="note">Registration isn't open yet.</span></div>
+  </div>
+</section>
+
+<section class="section on-dark" aria-labelledby="w-title">
+  <div class="wrap split">
+    <div class="split-media" style="--focus:50% 30%"><picture><source type="image/avif" srcset="assets/img/sarah-pampas-standing-480.avif 480w, assets/img/sarah-pampas-standing-800.avif 800w, assets/img/sarah-pampas-standing-1200.avif 1200w, assets/img/sarah-pampas-standing-1800.avif 1800w" sizes="(min-width: 62rem) 40vw, 90vw"><source type="image/webp" srcset="assets/img/sarah-pampas-standing-480.webp 480w, assets/img/sarah-pampas-standing-800.webp 800w, assets/img/sarah-pampas-standing-1200.webp 1200w, assets/img/sarah-pampas-standing-1800.webp 1800w" sizes="(min-width: 62rem) 40vw, 90vw"><img src="assets/img/sarah-pampas-standing-800.jpg" alt="Sarah standing beside pampas grass in a white studio" width="1800" height="2700" loading="lazy" decoding="async" style="background:url(data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAkABgDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAYCAwQF/8QAJhAAAQMDAwQCAwAAAAAAAAAAAQACAwQRIRITIgUxQWEjUYGRwf/EABgBAAMBAQAAAAAAAAAAAAAAAAABAgME/8QAGREBAQADAQAAAAAAAAAAAAAAAAERMUFR/9oADAMBAAIRAxEAPwBrCkqd5u6Y78gLlcOuq5G19Q8GQPgdFtNBw4HuLeb5/SLRJkxBCixwcLjsUJkW6iqkZPU2J5OsPvHhcetrgKtrYHa2/Dd2SQW+LppMNPM7XI3Tk4OL+0nT7zKt7GxljBO4tdp/v4Wcnq7caPPTnsdT3iN49R0n1dCq6Rpj6dA3i3gLj2hWlVYEZWKrpIphy1C7hkFCFz9b8aacbbTGOzMC/dCEKif/2Q==) center/cover"></picture></div>
+    <div>
+      <p class="eyebrow">Your teacher</p>
+      <h2 id="w-title">Flow with <em class="script">Sarah</em></h2>
+      <p>Sarah is a yoga instructor and meditation teacher who completed her yoga teacher training in Rishikesh, India, in 2013. She's also a licensed mental health counselor and retreat facilitator, so every class weaves movement with nervous-system-friendly breathwork and mindfulness.</p>
+      <div class="btn-row"><a class="btn btn--light magnetic" href="index.html#about">More about Sarah <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="v-title">
+  <div class="wrap split flip-split">
+    <div><button class="video-facade" type="button" data-video-facade data-src="assets/video/warehaus-retreat.mp4" data-track="assets/captions/warehaus-retreat.vtt" data-poster="assets/img/poster-warehaus-retreat-720.webp" data-label="Warehaus Wellness Retreat yoga flow" data-cursor="Play"><img src="assets/img/poster-warehaus-retreat-720.webp" alt="" width="720" height="400" loading="lazy"><span class="vf-play"><svg aria-hidden="true"><use href="#i-play"/></svg><span>Play: all-levels flow with live music <small>(1:31, captions)</small></span></span></button></div>
+    <div><p class="eyebrow">A taste of class</p><h2 id="v-title">What it <em class="script">feels like</em></h2><p>A past all-levels yoga flow with live music at the Warehaus Wellness Retreat.</p></div>
+  </div>
+</section>
+
+<section class="section cta-band" aria-labelledby="cta-title">
+  <div class="cb-media"><picture><source type="image/avif" srcset="assets/img/yoga-group-480.avif 480w, assets/img/yoga-group-800.avif 800w, assets/img/yoga-group-1200.avif 1200w, assets/img/yoga-group-1800.avif 1800w" sizes="100vw"><source type="image/webp" srcset="assets/img/yoga-group-480.webp 480w, assets/img/yoga-group-800.webp 800w, assets/img/yoga-group-1200.webp 1200w, assets/img/yoga-group-1800.webp 1800w" sizes="100vw"><img src="assets/img/yoga-group-800.jpg" alt="A smiling group after a yoga class" width="1800" height="2400" loading="lazy" decoding="async" style="background:url(data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAgABgDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAABAABAwX/xAAjEAACAQQCAgIDAAAAAAAAAAABAgMABBEhEjETUQVBFSOh/8QAFgEBAQEAAAAAAAAAAAAAAAAAAwEC/8QAGREAAwEBAQAAAAAAAAAAAAAAAAERAhJR/9oADAMBAAIRAxEAPwDtE5pSuQKH5YfPwg5MFIBOR2aUZ0Q44k4znW9eqJOm4wd3fLAeUgY7wqjtjVWOyfmLBztfPj+VUiyoZemitbyErJGeJkUllCL0O9mvJX5AS2qszMvE7z96pNtHBEjXfJ1yS6esA+vvWaDZfHyXjRlYSsJLMAem30KmeVGJu2ITZTq19h5G8aEOQVGiMbBqrVtf0xiGNpWXCsmMHIzrNVWeA6umf//Z) center/cover"></picture></div>
+  <div class="wrap">
+    <h2 id="cta-title">Be the first <em class="script">to know</em></h2>
+    <p>Send Sarah a quick note and she'll let you know when dates are set.</p>
+    <div class="btn-row"><a class="btn btn--coral magnetic" href="mailto:sarah@heysarahburnett.com?subject=Notify%20me%3A%20Yoga%20with%20Sarah">Notify me <svg aria-hidden="true"><use href="#i-arrow"/></svg></a><a class="btn btn--ghost" href="events.html">All events</a></div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <img src="assets/img/logo-507.png" width="507" height="171" alt="Sarah Burnett" loading="lazy">
+        <p>Licensed Mental Health Counselor · License #MH16161</p>
+        <p style="font-size:.9rem">Coaching and integration services aren't a substitute for emergency care. In crisis, call or text <a href="tel:988">988</a>.</p>
+      </div>
+      <div><h2>Explore</h2><ul><li><a href="index.html#about">About</a></li><li><a href="index.html#services">Work with me</a></li><li><a href="index.html#kap">Ketamine-assisted therapy</a></li><li><a href="index.html#stories">Stories</a></li><li><a href="index.html#retreats">Retreats</a></li><li><a href="index.html#podcast">Podcast</a></li></ul></div>
+      <div><h2>Offerings</h2><ul><li><a href="transformational-mindset-coaching.html">Transformational Mindset Coaching</a></li><li><a href="psychedelic-integration-coaching.html">Psychedelic Integration Coaching</a></li><li><a href="past-life-regression-therapy.html">Past-Life Regression Therapy</a></li><li><a href="empowered-parent-coaching.html">Empowered Parent Coaching</a></li><li><a href="leadership-future-success-coaching.html">Leadership &amp; Future Success Coaching</a></li><li><a href="laser-soul-coaching.html">Laser Soul Coaching</a></li></ul></div>
+      <div><h2>More</h2><ul><li><a href="events.html">Yoga &amp; events</a></li><li><a href="shop.html">Shop dōTERRA</a></li><li><a href="corporate-wellness.html">Corporate wellness</a></li><li><a href="https://www.heysarahburnett.com/speaking-engagements">Speaking</a></li><li><a href="https://www.heysarahburnett.com/resources">Resources</a></li><li><a href="https://www.heysarahburnett.com/blog">Blog</a></li><li><a href="https://www.heysarahburnett.com/plans-pricing">Plans &amp; pricing</a></li><li><a href="https://www.instagram.com/heysarahburnett/">Instagram</a></li></ul></div>
+      <div><h2>Contact</h2><ul><li><a href="tel:+14072748727">(407) 274-8727</a></li><li><a href="mailto:sarah@heysarahburnett.com">Email Sarah</a></li><li><a href="index.html#contact">Contact &amp; booking</a></li></ul></div>
+    </div>
+    <div class="legal">
+      <span>© <span id="year">2026</span> Sarah Burnett</span>
+      <span><a href="https://www.heysarahburnett.com/terms-and-agreements">Terms &amp; coaching disclaimer</a> · <a href="https://www.heysarahburnett.com/privacy-policy">Privacy</a> · <a href="accessibility.html">Accessibility</a></span>
+      <button class="motion-toggle" type="button" aria-pressed="false" id="motion-toggle">Reduce motion</button>
+    </div>
+  </div>
+</footer>
+
+<nav class="sticky-cta" aria-label="Quick booking">
+  <a class="btn btn--coral" href="https://www.heysarahburnett.com/contact">Book a free 20-min call</a>
+  <a class="btn call" href="tel:+14072748727" aria-label="Call Sarah, (407) 274-8727"><svg aria-hidden="true"><use href="#i-phone"/></svg></a>
+</nav>
+<script src="assets/js/page.js" type="module"></script>
+</body>
+</html>
