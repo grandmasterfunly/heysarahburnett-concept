@@ -48,7 +48,7 @@ const sectionObs = new IntersectionObserver((entries) => {
     navLinks.forEach((a) => (a.hash === '#' + e.target.id ? a.setAttribute('aria-current', 'true') : a.removeAttribute('aria-current')));
   });
 }, { rootMargin: '-45% 0px -50% 0px' });
-navLinks.forEach((a) => { const s = $(a.hash); if (s) sectionObs.observe(s); });
+navLinks.forEach((a) => { if (a.hash && a.pathname === location.pathname) { const s = $(a.hash); if (s) sectionObs.observe(s); } });
 
 /* ---------- Mobile menu (native modal dialog = focus trap + Esc) ---------- */
 const menu = $('#menu');
