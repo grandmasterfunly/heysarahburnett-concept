@@ -820,3 +820,21 @@ video{max-width:100%;border-radius:var(--radius);width:100%}
 .quote-cards .card{position:relative}
 .quote-cards .q-mark{font-family:var(--display);font-size:3.5rem;line-height:.6;color:var(--coral)}
 .quote-cards blockquote{margin:0 0 .75rem;font-family:var(--display);font-size:1.25rem;line-height:1.35}
+.page-hero--slim{min-height:auto}
+.page-hero--slim h1{font-size:clamp(2.4rem,9vw,4rem)}
+.legal-grid{display:grid;gap:2rem}
+@media (min-width:62rem){.legal-grid{grid-template-columns:16rem 1fr;align-items:start}.legal-toc{position:sticky;top:calc(var(--header-h) + 1.5rem)}}
+.legal-toc{background:var(--paper);border:1px solid rgba(28,27,41,.12);border-radius:var(--radius);padding:1rem 1.25rem}
+.legal-toc-title{font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;color:var(--coral-ink);margin:0 0 .5rem;font-family:inherit;font-weight:800}
+.legal-toc ol{margin:0;padding-left:1.1rem;display:grid;gap:.35rem;font-size:.92rem}
+.legal-toc a{color:var(--ink)}
+@media (max-width:61.99rem){.legal-toc ol{max-height:12rem;overflow:auto}}
+.prose{max-width:46rem;color:var(--ink-soft);line-height:1.7}
+.prose h2{font-size:clamp(1.5rem,5vw,2rem);margin:2.5rem 0 .75rem;color:var(--ink);scroll-margin-top:calc(var(--header-h) + 1rem)}
+.prose h3{font-size:1.15rem;margin:1.75rem 0 .5rem;color:var(--ink)}
+.prose p,.prose ul{margin:0 0 1rem}
+.prose ul{padding-left:1.25rem}
+.prose a{color:var(--teal);overflow-wrap:anywhere}
+.prose .in-short{background:var(--sand);border-radius:.75rem;padding:.75rem 1rem}
+.prose address{font-style:normal;margin-bottom:1rem}
+.legal-toc ol{list-style:none;padding-left:0}
