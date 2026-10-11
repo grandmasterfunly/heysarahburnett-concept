@@ -816,3 +816,4 @@ video{max-width:100%;border-radius:var(--radius);width:100%}
 .on-dark .res-panel,.on-dark .res-panel a{color:var(--ink)}
 .res-list li{border-bottom:1px solid rgba(28,27,41,.14)}
 .res-list a svg{display:inline-block;width:14px;height:14px}
+.contact-cards h3 a{color:inherit;word-break:break-word}
