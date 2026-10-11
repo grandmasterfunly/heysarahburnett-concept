@@ -793,3 +793,9 @@ video{max-width:100%;border-radius:var(--radius);width:100%}
 .event-facts dt{font-size:.75rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase;color:var(--coral-ink);margin-bottom:.4rem}
 .event-facts dd{margin:0;color:var(--ink-soft)}
 .btn[disabled]{opacity:.6;cursor:not-allowed}
+.ph-chips.on-light{margin-top:1.25rem}
+.ph-chips.on-light li{border-color:rgba(28,27,41,.25);background:rgba(28,27,41,.04)}
+.ph-chips a{color:inherit;text-decoration:none}
+.ph-chips a:hover,.ph-chips a:focus-visible{text-decoration:underline}
+.cred-list{display:grid;gap:.6rem 2rem}
+@media (min-width:48rem){.cred-list{grid-template-columns:1fr 1fr}}

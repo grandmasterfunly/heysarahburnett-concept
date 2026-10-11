@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<script>
+/* Always open at the very top unless the URL targets a section (#hash).
+   Browsers restore the previous scroll position on reload, back/forward and reopened tabs; with lazy media
+   still loading, that restore lands late and looks like the page "jumps" down. */
+(function(){
+  if (location.hash) return;
+  try { history.scrollRestoration = 'manual'; } catch (e) {}
+  var touched = false;
+  ['wheel','touchstart','keydown','pointerdown'].forEach(function(t){ addEventListener(t, function(){ touched = true; }, { once: true, passive: true, capture: true }); });
+  function top(){ if (touched || location.hash || !(scrollX || scrollY)) return; var h = document.documentElement, b = h.style.scrollBehavior; h.style.scrollBehavior = 'auto'; window.scrollTo(0, 0); h.style.scrollBehavior = b; }
+  document.addEventListener('DOMContentLoaded', top);
+  addEventListener('load', function(){ top(); setTimeout(top, 0); });
+  addEventListener('pageshow', function(e){ if (e.persisted) top(); });
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>About Sarah | Sarah Burnett, LMHC</title>
+<meta name="description" content="Sarah Burnett, LMHC: transformational mindset and integration coach, past-life regression therapist, yoga teacher, and co-host of Therapy Unfiltered.">
+<meta name="theme-color" content="#082f33">
+<link rel="icon" href="assets/img/favicon.png">
+<meta property="og:title" content="About Sarah | Sarah Burnett">
+<meta property="og:description" content="Sarah Burnett, LMHC: transformational mindset and integration coach, past-life regression therapist, yoga teacher, and co-host of Therapy Unfiltered.">
+<meta property="og:image" content="assets/img/sarah-pink-chair-1200.webp">
+<meta property="og:type" content="website">
+<link rel="preload" href="assets/fonts/cormorant-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/manrope-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/main.css">
+<script>document.documentElement.classList.replace('no-js','js');try{if(localStorage.getItem('sb-motion')==='off')document.documentElement.classList.add('no-motion')}catch(e){}</script>
+</head>
+<body class="subpage page-about">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-right" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5v15l13-7.5z" fill="currentColor"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 24 24"><path d="M7 4h4v16H7zM13 4h4v16h-4z" fill="currentColor"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-ext" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 01-1 1H5a1 1 0 01-1-1V7a1 1 0 011-1h5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-volume" viewBox="0 0 24 24"><path d="M4 9v6h4l5 4V5L8 9zM16 9a4 4 0 010 6M18.5 6.5a8 8 0 010 11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+<div class="progress" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"><span class="cursor-label"></span></div>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header" id="top">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Sarah Burnett, home">
+      <img src="assets/img/logo-507.png" srcset="assets/img/logo-507.webp" width="507" height="171" alt="Sarah Burnett">
+    </a>
+    <nav class="nav-desktop" aria-label="Primary">
+      <a href="about.html" aria-current="page">About</a>
+      <a href="services.html">Services</a>
+      <a href="index.html#kap">KAP</a>
+      <a href="retreats.html">Retreats</a>
+      <a href="events.html">Events</a>
+      <a href="index.html#podcast">Podcast</a>
+      <a href="shop.html">Shop</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn--coral btn--sm header-cta magnetic" href="https://www.heysarahburnett.com/contact">Book a free call</a>
+      <button class="menu-btn" type="button" aria-controls="menu" aria-label="Open menu"><span aria-hidden="true"></span></button>
+    </div>
+  </div>
+</header>
+
+<dialog class="menu-dialog" id="menu" aria-label="Site menu">
+  <div class="menu-inner">
+    <div class="menu-top">
+      <img src="assets/img/logo-507.png" width="507" height="171" alt="">
+      <button class="menu-close" type="button" aria-label="Close menu"><svg width="22" height="22" aria-hidden="true"><use href="#i-close"/></svg></button>
+    </div>
+    <nav aria-label="Mobile">
+      <ul class="menu-list menu-list--compact">
+        <li><a href="index.html"><small>00</small>Home</a></li>
+        <li><a href="about.html" aria-current="page"><small>01</small>About Sarah</a></li>
+        <li><a href="services.html"><small>02</small>Work with me</a></li>
+        <li><a href="index.html#kap"><small>03</small>Ketamine-assisted therapy</a></li>
+        <li><a href="retreats.html"><small>04</small>Retreats</a></li>
+        <li><a href="events.html"><small>05</small>Yoga & events</a></li>
+        <li><a href="index.html#podcast"><small>06</small>Podcast</a></li>
+        <li><a href="shop.html"><small>07</small>Shop dōTERRA</a></li>
+        <li><a href="index.html#contact"><small>08</small>Contact</a></li>
+      </ul>
+      <h2 class="menu-sub">Offerings</h2><ul class="menu-offers"><li><a href="transformational-mindset-coaching.html">Transformational Mindset Coaching</a></li><li><a href="psychedelic-integration-coaching.html">Psychedelic Integration Coaching</a></li><li><a href="past-life-regression-therapy.html">Past-Life Regression Therapy</a></li><li><a href="empowered-parent-coaching.html">Empowered Parent Coaching</a></li><li><a href="leadership-future-success-coaching.html">Leadership & Future Success Coaching</a></li><li><a href="laser-soul-coaching.html">Laser Soul Coaching</a></li></ul>
+    </nav>
+    <div class="menu-foot">
+      <a class="btn btn--coral" href="https://www.heysarahburnett.com/contact">Book a free 20-min discovery call <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <a class="btn btn--ghost" href="tel:+14072748727" style="--fg:#fff"><svg aria-hidden="true"><use href="#i-phone"/></svg> (407) 274-8727</a>
+    </div>
+  </div>
+</dialog>
+
+<main id="main" tabindex="-1">
+<section class="page-hero" aria-labelledby="ph-title">
+  <div class="ph-media" data-parallax="0.12" style="--focus:50% 25%"><picture><source type="image/avif" srcset="assets/img/sarah-pink-portrait-480.avif 480w, assets/img/sarah-pink-portrait-800.avif 800w, assets/img/sarah-pink-portrait-1200.avif 1200w, assets/img/sarah-pink-portrait-1800.avif 1800w" sizes="100vw"><source type="image/webp" srcset="assets/img/sarah-pink-portrait-480.webp 480w, assets/img/sarah-pink-portrait-800.webp 800w, assets/img/sarah-pink-portrait-1200.webp 1200w, assets/img/sarah-pink-portrait-1800.webp 1800w" sizes="100vw"><img src="assets/img/sarah-pink-portrait-800.jpg" alt="Sarah smiling in a pink sweater" width="1800" height="2173" fetchpriority="high" decoding="async" style="background:url(data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAdABgDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQGBQL/xAAmEAABAwQBAwQDAAAAAAAAAAABAgMRAAQSIQUUQXETFTEyM1GB/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgAD/8QAHREAAwACAgMAAAAAAAAAAAAAAAECAxEEEiExQf/aAAwDAQACEQMRAD8Aqz2rD90uAW7lRQbRxzDDGFIEwFT332rT5B5VvZuOJGSgNCobq3VcWqzInBzSp2BM1NP4axjdLZeq+P7RSXG3C7myQ45GUlJI7xRUCpctyxjkMOjcz+sVHucc+nJzCUKM4xvzFWT7YfYWgmIEg/oisNbjv5fUOY0D4pSm/Q8fIeLxob4iBaoSDOpPk0V1YrLtuHVQCrcAQKKAKfZ7P//Z) center/cover"></picture></div>
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li><span aria-current="page">About</span></li></ol></nav>
+    <p class="eyebrow">Thank you for joining me here!</p>
+    <h1 id="ph-title">Heal your past to awaken your purpose <em class="script">in this lifetime</em></h1>
+    <p class="lede">I’m a Licensed Mental Health Therapist turned Transformational Mindset, Somatic Psychedelic Facilitator &amp; Integration Coach, Yoga Teacher, and a Co-Facilitator of Soul Journeys Retreats &amp; Co-Host of the Therapy Unfiltered Podcast with my amazing mom, Petey!</p>
+    <ul class="ph-chips"><li><a href="#credentials">Credentials</a></li><li><a href="#story">My story</a></li><li><a href="#approach">Approach</a></li><li><a href="#videos">Video gallery</a></li></ul>
+  </div>
+</section>
+
+<section class="section" id="credentials" aria-labelledby="cr-title">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">The credentials</p><h2 id="cr-title">Trained to go <em class="script">deeper</em></h2></div>
+    <ul class="checks cred-list"><li>Licensed Mental Health Counselor #16161</li><li>Certified Neuro-Linguistic Programming (NLP) Practitioner &amp; Trauma Informed Coach</li><li>Certified Advanced Accelerated Resolution Therapy (ART) for Trauma Healing and Self-Regulation</li><li>Certified in Reconsolidation of Traumatic Memories (RTM)</li><li>Master Hypnotherapist and Past-Life Regression Therapist (OMNI)</li><li>Certified in Emotionally Focused Therapy (EFT) for Couples</li><li>Psychedelic Integration Coach</li><li>Certified Somatic Psychedelic Facilitator 2024, Embody Lab</li><li>Registered Yoga Teacher, AcroYoga &amp; Thai Bodywork Teacher</li><li>dōTERRA Essential Oils Wellness Leader</li></ul>
+  </div>
+</section>
+
+<section class="section on-dark" id="story" aria-labelledby="st-title">
+  <div class="wrap split">
+    <div class="split-media" style="--focus:50% 35%"><picture><source type="image/avif" srcset="assets/img/sarah-petey-garden-480.avif 480w, assets/img/sarah-petey-garden-800.avif 800w, assets/img/sarah-petey-garden-1200.avif 1200w, assets/img/sarah-petey-garden-1800.avif 1800w" sizes="(min-width: 62rem) 40vw, 90vw"><source type="image/webp" srcset="assets/img/sarah-petey-garden-480.webp 480w, assets/img/sarah-petey-garden-800.webp 800w, assets/img/sarah-petey-garden-1200.webp 1200w, assets/img/sarah-petey-garden-1800.webp 1800w" sizes="(min-width: 62rem) 40vw, 90vw"><img src="assets/img/sarah-petey-garden-800.jpg" alt="Sarah and her mom Petey laughing together in a tropical garden" width="1800" height="1325" loading="lazy" decoding="async" style="background:url(data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAASABgDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAUCAQT/xAAlEAACAgIBAgYDAAAAAAAAAAABAgADBBESIUEFEyIxUWEjcbH/xAAXAQADAQAAAAAAAAAAAAAAAAAAAgMB/8QAHREAAgICAwEAAAAAAAAAAAAAAAECERIxITKBkf/aAAwDAQACEQMRAD8Aovk867LK3YFNpoqOJMltZlv4la9NoVzSNsVHQDc8yZTjKtryCypyJYE7AYyhjW0c7C5HrGuR+P3EwcYWti28qx9JtWbn5LFFyHs0/VhobX5iY8NyK8PIfl0RQS++410H2YhJtaLzgo1ydtH5cw9/N95uv2A7FBESstAuvwisT5i/e/7ERMRF7P/Z) center/cover"></picture></div>
+    <div>
+      <p class="eyebrow">My story</p>
+      <h2 id="st-title">A soul-infused path of <em class="script">healing and wisdom</em></h2>
+      <p>For as long as I can remember I have always been surrounded by angels, felt that I’ve lived multiple lifetimes, understood that my body stores unresolved feelings and traumatic memories, knew that I can manifest and that I chose my siblings, parents, and friends as part of my soul contract for healing and growth.</p>
+      <div class="clamp" id="story-more" data-clamp>
+        <p>My Nana Suni was an intuitive who believed in the power of our mindset, meditation, dream interpretation, crystals, spirits, creative energy and so much more! She infused her deep wisdom into my mother and thus, into me. I soaked up all that I could from Nana until the age of 12 when she transitioned. Even though she’s on the other side, I feel her when the lights flicker, the smell of Habanita perfume wafts across my nose, or this warm presence flows throughout my body. She’s my guardian angel and has worked some magic for me behind the scenes. Thank you forever, Nana.</p>
+        <p>My mom carried on the spiritual knowledge she inherited from Nana to our family growing up. I remember having sleepovers with friends, and in the morning we would all gather around the breakfast table to have mom interpret our dreams. I remember going into the bathroom with her, dimming the lights, and looking into the mirror so she could teach me how to read my aura. We spent many Saturdays out at the beach soaking up nature and resetting in the sea. Just like Nana, mom is an intuitive, but she started out as a traditional Marriage &amp; Family Therapist before finding her way back to Spirit through channeling messages and past-life regression.</p>
+        <p>I guess you could say that being intuitive was in my genes. I’ve always had this strong felt sense in my body; a knowing or a wisdom that I could tap into. Sometimes it shows up as chills, and other times it's a warm soothing feeling or a cold jerk of my body. However it shows up, I’ve learned to listen to it and trust that it is presenting for my highest good. This intuitive knowing or gut instinct led me safely around the world for 3 years, from exploring the mountains of Thailand meditating with Monks to living off-grid on an island near Cambodia to falling in love with sacred Balinese traditions to living in a van as I traveled the whole of Australia. And then so beautifully, I was guided to India for my yoga teaching training and Reiki certification, then back to Bali to drop into the ritualistic wisdom of Transcendental Meditation (TM) developed by Maharishi Mahesh Yogi, and finally onto New Zealand for a solo adventure allowing me to tap deeper into meditation, yoga and expansiveness. With little access to the internet and only an old-school flip phone, I recognize how my intuitive self and my Guardian Angel were my guiding light.</p>
+        <p>When I returned to the states, I found my way back to my hometown of Orlando to start my counseling private practice with my mom. I started my practice as a play therapist for children 2 to 12-years old. And I’ve continued to see a handful of younger kids throughout the years; it is one of my favorite joys in life! Children fully live in their subconscious mind and with that, have the ability to shift, heal and adapt their mindset at a much quicker speed than us adults who can feel hesitant of new ways of being and perhaps resistant to change. Since children are so available for these new learnings, I’ve moved into Parent Coaching where I empower parents with tangible tools so they can create a home full of compassion, respect and beautiful connection.</p>
+        <p>As the practice grew into seeing a wide range of clients from young adults to retired professionals, I recognized the need to expand past the limitations of talk therapy. I have found some of the most powerful healing modalities over the years to help guide my clients out of their darkness and into a place of inner knowing and safety within themselves. I specialize in working with the LGBTQ+ community among teenagers and adults, and after the Pulse shooting in Orlando in 2016 it became my mission to learn the best trauma therapy techniques.</p>
+      </div>
+      <button class="read-more" type="button" aria-expanded="false" aria-controls="story-more">Continue reading</button>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-label="Quote">
+  <div class="wrap"><figure class="big-quote reveal"><blockquote><p>When you trust yourself you feel empowered to take on the world.</p></blockquote></figure></div>
+</section>
+
+<section class="section" id="approach" aria-labelledby="apr-title">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">My approach</p><h2 id="apr-title">How I <em class="script">work</em></h2></div>
+    <div class="pkgs" data-tabs>
+      <div class="pkg-tabs" role="tablist" aria-label="My approach"><button class="pkg-tab" role="tab" id="ab-t0" aria-controls="ab-p0" aria-selected="true">Trauma-informed techniques</button><button class="pkg-tab" role="tab" id="ab-t1" aria-controls="ab-p1" aria-selected="false" tabindex="-1">Neuro-Linguistic Programming (NLP)</button><button class="pkg-tab" role="tab" id="ab-t2" aria-controls="ab-p2" aria-selected="false" tabindex="-1">Hypnotherapy &amp; past-life regression</button><button class="pkg-tab" role="tab" id="ab-t3" aria-controls="ab-p3" aria-selected="false" tabindex="-1">Relief &amp; empowerment</button><button class="pkg-tab" role="tab" id="ab-t4" aria-controls="ab-p4" aria-selected="false" tabindex="-1">Connection to the subconscious</button><button class="pkg-tab" role="tab" id="ab-t5" aria-controls="ab-p5" aria-selected="false" tabindex="-1">Personalized coaching</button></div>
+      <div class="pkg-panel" role="tabpanel" id="ab-p0" aria-labelledby="ab-t0" tabindex="0"><div><h3>Trauma-informed techniques</h3></div><div><p>Certified in Reconsolidation of Traumatic Memories (RTM) and Accelerated Resolution Therapy (ART), I employ gentle memory reconsolidation techniques and bi-lateral brain stimulation to effectively alleviate post-traumatic stress symptoms, catering to diverse experiences such as domestic violence, grief, and phobias.</p></div></div><div class="pkg-panel" role="tabpanel" id="ab-p1" aria-labelledby="ab-t1" tabindex="0" hidden><div><h3>Neuro-Linguistic Programming (NLP)</h3></div><div><p>NLP is a foundational tool woven throughout all of my coaching because it’s an extremely gentle way to tap into the subconscious mind. I use guided imagery and compassionate language to allow clients to clear past pains, connect to the present, and project future successes.</p></div></div><div class="pkg-panel" role="tabpanel" id="ab-p2" aria-labelledby="ab-t2" tabindex="0" hidden><div><h3>Hypnotherapy &amp; past-life regression</h3></div><div><p>Certified in Hypnotherapy and Past-Life Regression Therapy, I guide clients through age regression into childhood and exploration of past lives. This transformative journey fosters deep emotional healing on a holistic level, empowering individuals to discover answers within themselves.</p></div></div><div class="pkg-panel" role="tabpanel" id="ab-p3" aria-labelledby="ab-t3" tabindex="0" hidden><div><h3>Relief &amp; empowerment</h3></div><div><p>Through the transformation of limiting beliefs and the release of past traumas and negative emotions, clients experience profound relief. Witnessing faces fill with vibrance, shoulders softening, and a brightened aura, I guide individuals to manifest positive connections in mind, body, and spirit.</p></div></div><div class="pkg-panel" role="tabpanel" id="ab-p4" aria-labelledby="ab-t4" tabindex="0" hidden><div><h3>Connection to the subconscious</h3></div><div><p>Recognizing the power of the subconscious mind, I provide a safe space for clients to explore and transform. The goal is to offer a range of healing modalities, facilitating a connection with oneself, nature, and the universe, fostering a life enveloped with joy, peace, resilience, truth, and love.</p></div></div><div class="pkg-panel" role="tabpanel" id="ab-p5" aria-labelledby="ab-t5" tabindex="0" hidden><div><h3>Personalized coaching</h3></div><div><p>As your coach, I invite you to embark on a transformative journey, offering personalized sessions tailored to your unique needs. If you feel the intuitive call, a discovery call awaits, marking the beginning of your path towards self-discovery and transformational healing.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section on-dark" aria-labelledby="te-title">
+  <div class="wrap">
+    <h2 id="te-title" class="visually-hidden">Testimonial</h2>
+    <figure class="testi reveal">
+      <span class="q-mark" aria-hidden="true">“</span>
+      <blockquote>
+        <p class="lead-q">Honestly, Sarah has been far more than I expected a therapist to be.</p>
+        <p>"I have been seeing Sarah Burnett for seven months. Prior to my first session, I was so guarded and too anxious to give it a shot. Sarah is down-to-earth, welcoming, and her energy is a joy to be around.</p>
+        <div id="jen-q" hidden>
+          <p>Whenever I have a session, I genuinely feel like I've known her all of my life. I feel that is important to have so that it is easier to open up. Along with her amazing personality, her professionalism and care for me as her client is like no other. In these last few months, I've grown much more than I expected. She holds me accountable for my own growth, making sure I'm getting true results out of my sessions. I would wholeheartedly recommend Sarah to all age groups. My ongoing experience with her has been nothing short of amazing."</p>
+        </div>
+      </blockquote>
+      <button class="expand-btn" type="button" data-expand data-label="Read Jennifer's full review" aria-expanded="false" aria-controls="jen-q">Read Jennifer's full review</button>
+      <figcaption><cite>Jennifer</cite></figcaption>
+    </figure>
+    <p class="note">Individual experiences; results vary.</p>
+  </div>
+</section>
+
+<section class="section" id="videos" aria-labelledby="vg-title">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Video gallery</p><h2 id="vg-title">Watch <em class="script">the experience</em></h2></div>
+    <ul class="offer-strip" data-strip>
+      <li class="offer-card"><button class="video-facade" type="button" data-video-facade data-src="assets/video/kap-clip.mp4" data-track="assets/captions/kap-clip.vtt" data-poster="assets/img/poster-kap-clip-720.webp" data-label="Ketamine-Assisted Psychotherapy" data-cursor="Play"><img src="assets/img/poster-kap-clip-720.webp" alt="" width="720" height="400" loading="lazy"><span class="vf-play"><svg aria-hidden="true"><use href="#i-play"/></svg><span>Ketamine-Assisted Psychotherapy <small>(0:54)</small></span></span></button></li>
+      <li class="offer-card"><button class="video-facade" type="button" data-video-facade data-src="assets/video/doterra-workshop.mp4" data-track="assets/captions/doterra-workshop.vtt" data-poster="assets/img/poster-doterra-workshop-720.webp" data-label="dōTERRA Essential Oils Workshop" data-cursor="Play"><img src="assets/img/poster-doterra-workshop-720.webp" alt="" width="720" height="400" loading="lazy"><span class="vf-play"><svg aria-hidden="true"><use href="#i-play"/></svg><span>dōTERRA Essential Oils Workshop <small>(0:20)</small></span></span></button></li>
+      <li class="offer-card"><button class="video-facade" type="button" data-video-facade data-src="assets/video/orlando-brewing-yoga.mp4" data-track="assets/captions/orlando-brewing-yoga.vtt" data-poster="assets/img/poster-orlando-brewing-yoga-720.webp" data-label="Orlando Brewing" data-cursor="Play"><img src="assets/img/poster-orlando-brewing-yoga-720.webp" alt="" width="720" height="400" loading="lazy"><span class="vf-play"><svg aria-hidden="true"><use href="#i-play"/></svg><span>Orlando Brewing <small>(1:00)</small></span></span></button></li>
+      <li class="offer-card"><button class="video-facade" type="button" data-video-facade data-src="assets/video/acro-hulaween.mp4" data-track="assets/captions/acro-hulaween.vtt" data-poster="assets/img/poster-acro-hulaween-720.webp" data-label="Acro Yoga @ Hulaween" data-cursor="Play"><img src="assets/img/poster-acro-hulaween-720.webp" alt="" width="720" height="400" loading="lazy"><span class="vf-play"><svg aria-hidden="true"><use href="#i-play"/></svg><span>Acro Yoga @ Hulaween <small>(1:25)</small></span></span></button></li>
+      <li class="offer-card"><button class="video-facade" type="button" data-video-facade data-src="assets/video/warehaus-retreat.mp4" data-track="assets/captions/warehaus-retreat.vtt" data-poster="assets/img/poster-warehaus-retreat-720.webp" data-label="Warehaus Wellness Retreat" data-cursor="Play"><img src="assets/img/poster-warehaus-retreat-720.webp" alt="" width="720" height="400" loading="lazy"><span class="vf-play"><svg aria-hidden="true"><use href="#i-play"/></svg><span>Warehaus Wellness Retreat <small>(1:31)</small></span></span></button></li>
+      <li class="offer-card"><button class="video-facade" type="button" data-video-facade data-src="assets/video/costa-rica-2024.mp4" data-track="assets/captions/costa-rica-2024.vtt" data-poster="assets/img/poster-costa-rica-2024-720.webp" data-label="Costa Rica Retreat 2024" data-cursor="Play"><img src="assets/img/poster-costa-rica-2024-720.webp" alt="" width="720" height="400" loading="lazy"><span class="vf-play"><svg aria-hidden="true"><use href="#i-play"/></svg><span>Costa Rica Retreat 2024 <small>(1:15)</small></span></span></button></li>
+      <li class="offer-card"><button class="video-facade" type="button" data-video-facade data-src="assets/video/acro-workshop.mp4" data-track="assets/captions/acro-workshop.vtt" data-poster="assets/img/poster-acro-workshop-720.webp" data-label="Acro Yoga Workshop" data-cursor="Play"><img src="assets/img/poster-acro-workshop-720.webp" alt="" width="720" height="400" loading="lazy"><span class="vf-play"><svg aria-hidden="true"><use href="#i-play"/></svg><span>Acro Yoga Workshop <small>(0:47)</small></span></span></button></li>
+    </ul>
+    <p class="swipe-hint" aria-hidden="true">Swipe for more →</p>
+  </div>
+</section>
+
+<section class="section cta-band" aria-labelledby="cta-title">
+  <div class="cb-media"><picture><source type="image/avif" srcset="assets/img/sarah-desk-wide-480.avif 480w, assets/img/sarah-desk-wide-800.avif 800w, assets/img/sarah-desk-wide-1200.avif 1200w, assets/img/sarah-desk-wide-1800.avif 1800w" sizes="100vw"><source type="image/webp" srcset="assets/img/sarah-desk-wide-480.webp 480w, assets/img/sarah-desk-wide-800.webp 800w, assets/img/sarah-desk-wide-1200.webp 1200w, assets/img/sarah-desk-wide-1800.webp 1800w" sizes="100vw"><img src="assets/img/sarah-desk-wide-800.jpg" alt="Sarah smiling at her desk beside a laptop and plants" width="1800" height="1823" loading="lazy" decoding="async" style="background:url(data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAYABgDASIAAhEBAxEB/8QAGQABAAMBAQAAAAAAAAAAAAAAAAQFBgID/8QAIxAAAgIBBAEFAQAAAAAAAAAAAQIAAxEEEiExEwUyQYGRof/EABYBAQEBAAAAAAAAAAAAAAAAAAIAAf/EABgRAQEBAQEAAAAAAAAAAAAAAAABERIh/9oADAMBAAIRAxEAPwDWZkCr1MWa9qMLsFhqBzzuAz+dyJriV1Ksb7WQL7FGSeRwJxVVWNYbUBU22ra28Y8eB/SYOvcKRoIkUa2tr1qqIbPbDoRGL08NZ7QSu19dtbr4HwX4VcLw33ESki2rKulQi71G75iImZFr/9k=) center/cover"></picture></div>
+  <div class="wrap">
+    <h2 id="cta-title">Feel the <em class="script">intuitive call?</em></h2>
+    <p>A discovery call awaits, marking the beginning of your path towards self-discovery and transformational healing.</p>
+    <div class="btn-row"><a class="btn btn--coral magnetic" href="https://www.heysarahburnett.com/contact">Book a discovery call <svg aria-hidden="true"><use href="#i-arrow"/></svg></a><a class="btn btn--ghost" href="services.html">Work with me</a></div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <img src="assets/img/logo-507.png" width="507" height="171" alt="Sarah Burnett" loading="lazy">
+        <p>Licensed Mental Health Counselor · License #MH16161</p>
+        <p style="font-size:.9rem">Coaching and integration services aren't a substitute for emergency care. In crisis, call or text <a href="tel:988">988</a>.</p>
+      </div>
+      <div><h2>Explore</h2><ul><li><a href="about.html">About</a></li><li><a href="services.html">Work with me</a></li><li><a href="index.html#kap">Ketamine-assisted therapy</a></li><li><a href="index.html#stories">Stories</a></li><li><a href="retreats.html">Retreats</a></li><li><a href="index.html#podcast">Podcast</a></li></ul></div>
+      <div><h2>Offerings</h2><ul><li><a href="transformational-mindset-coaching.html">Transformational Mindset Coaching</a></li><li><a href="psychedelic-integration-coaching.html">Psychedelic Integration Coaching</a></li><li><a href="past-life-regression-therapy.html">Past-Life Regression Therapy</a></li><li><a href="empowered-parent-coaching.html">Empowered Parent Coaching</a></li><li><a href="leadership-future-success-coaching.html">Leadership &amp; Future Success Coaching</a></li><li><a href="laser-soul-coaching.html">Laser Soul Coaching</a></li></ul></div>
+      <div><h2>More</h2><ul><li><a href="events.html">Yoga &amp; events</a></li><li><a href="shop.html">Shop dōTERRA</a></li><li><a href="corporate-wellness.html">Corporate wellness</a></li><li><a href="speaking.html">Speaking</a></li><li><a href="https://www.heysarahburnett.com/resources">Resources</a></li><li><a href="https://www.heysarahburnett.com/blog">Blog</a></li><li><a href="https://www.heysarahburnett.com/plans-pricing">Plans &amp; pricing</a></li><li><a href="https://www.instagram.com/heysarahburnett/">Instagram</a></li></ul></div>
+      <div><h2>Contact</h2><ul><li><a href="tel:+14072748727">(407) 274-8727</a></li><li><a href="mailto:sarah@heysarahburnett.com">Email Sarah</a></li><li><a href="index.html#contact">Contact &amp; booking</a></li></ul></div>
+    </div>
+    <div class="legal">
+      <span>© <span id="year">2026</span> Sarah Burnett</span>
+      <span><a href="https://www.heysarahburnett.com/terms-and-agreements">Terms &amp; coaching disclaimer</a> · <a href="https://www.heysarahburnett.com/privacy-policy">Privacy</a> · <a href="accessibility.html">Accessibility</a></span>
+      <button class="motion-toggle" type="button" aria-pressed="false" id="motion-toggle">Reduce motion</button>
+    </div>
+  </div>
+</footer>
+
+<nav class="sticky-cta" aria-label="Quick booking">
+  <a class="btn btn--coral" href="https://www.heysarahburnett.com/contact">Book a free 20-min call</a>
+  <a class="btn call" href="tel:+14072748727" aria-label="Call Sarah, (407) 274-8727"><svg aria-hidden="true"><use href="#i-phone"/></svg></a>
+</nav>
+<script src="assets/js/page.js" type="module"></script>
+</body>
+</html>
