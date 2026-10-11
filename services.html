@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<script>
+/* Always open at the very top unless the URL targets a section (#hash).
+   Browsers restore the previous scroll position on reload, back/forward and reopened tabs; with lazy media
+   still loading, that restore lands late and looks like the page "jumps" down. */
+(function(){
+  if (location.hash) return;
+  try { history.scrollRestoration = 'manual'; } catch (e) {}
+  var touched = false;
+  ['wheel','touchstart','keydown','pointerdown'].forEach(function(t){ addEventListener(t, function(){ touched = true; }, { once: true, passive: true, capture: true }); });
+  function top(){ if (touched || location.hash || !(scrollX || scrollY)) return; var h = document.documentElement, b = h.style.scrollBehavior; h.style.scrollBehavior = 'auto'; window.scrollTo(0, 0); h.style.scrollBehavior = b; }
+  document.addEventListener('DOMContentLoaded', top);
+  addEventListener('load', function(){ top(); setTimeout(top, 0); });
+  addEventListener('pageshow', function(e){ if (e.persisted) top(); });
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Work With Me | Sarah Burnett, LMHC</title>
+<meta name="description" content="Coaching, psychedelic integration, past-life regression, parent coaching and retreats with Sarah Burnett, LMHC.">
+<meta name="theme-color" content="#082f33">
+<link rel="icon" href="assets/img/favicon.png">
+<meta property="og:title" content="Work With Me | Sarah Burnett">
+<meta property="og:description" content="Coaching, psychedelic integration, past-life regression, parent coaching and retreats with Sarah Burnett, LMHC.">
+<meta property="og:image" content="assets/img/sarah-pink-chair-1200.webp">
+<meta property="og:type" content="website">
+<link rel="preload" href="assets/fonts/cormorant-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/manrope-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/main.css">
+<script>document.documentElement.classList.replace('no-js','js');try{if(localStorage.getItem('sb-motion')==='off')document.documentElement.classList.add('no-motion')}catch(e){}</script>
+</head>
+<body class="subpage page-services">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-right" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5v15l13-7.5z" fill="currentColor"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 24 24"><path d="M7 4h4v16H7zM13 4h4v16h-4z" fill="currentColor"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-ext" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 01-1 1H5a1 1 0 01-1-1V7a1 1 0 011-1h5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-volume" viewBox="0 0 24 24"><path d="M4 9v6h4l5 4V5L8 9zM16 9a4 4 0 010 6M18.5 6.5a8 8 0 010 11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+<div class="progress" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"><span class="cursor-label"></span></div>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header" id="top">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Sarah Burnett, home">
+      <img src="assets/img/logo-507.png" srcset="assets/img/logo-507.webp" width="507" height="171" alt="Sarah Burnett">
+    </a>
+    <nav class="nav-desktop" aria-label="Primary">
+      <a href="index.html#about">About</a>
+      <a href="services.html" aria-current="page">Services</a>
+      <a href="index.html#kap">KAP</a>
+      <a href="index.html#retreats">Retreats</a>
+      <a href="events.html">Events</a>
+      <a href="index.html#podcast">Podcast</a>
+      <a href="shop.html">Shop</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn--coral btn--sm header-cta magnetic" href="https://www.heysarahburnett.com/contact">Book a free call</a>
+      <button class="menu-btn" type="button" aria-controls="menu" aria-label="Open menu"><span aria-hidden="true"></span></button>
+    </div>
+  </div>
+</header>
+
+<dialog class="menu-dialog" id="menu" aria-label="Site menu">
+  <div class="menu-inner">
+    <div class="menu-top">
+      <img src="assets/img/logo-507.png" width="507" height="171" alt="">
+      <button class="menu-close" type="button" aria-label="Close menu"><svg width="22" height="22" aria-hidden="true"><use href="#i-close"/></svg></button>
+    </div>
+    <nav aria-label="Mobile">
+      <ul class="menu-list menu-list--compact">
+        <li><a href="index.html"><small>00</small>Home</a></li>
+        <li><a href="index.html#about"><small>01</small>About Sarah</a></li>
+        <li><a href="services.html" aria-current="page"><small>02</small>Work with me</a></li>
+        <li><a href="index.html#kap"><small>03</small>Ketamine-assisted therapy</a></li>
+        <li><a href="index.html#retreats"><small>04</small>Retreats</a></li>
+        <li><a href="events.html"><small>05</small>Yoga & events</a></li>
+        <li><a href="index.html#podcast"><small>06</small>Podcast</a></li>
+        <li><a href="shop.html"><small>07</small>Shop dōTERRA</a></li>
+        <li><a href="index.html#contact"><small>08</small>Contact</a></li>
+      </ul>
+      <h2 class="menu-sub">Offerings</h2><ul class="menu-offers"><li><a href="transformational-mindset-coaching.html">Transformational Mindset Coaching</a></li><li><a href="psychedelic-integration-coaching.html">Psychedelic Integration Coaching</a></li><li><a href="past-life-regression-therapy.html">Past-Life Regression Therapy</a></li><li><a href="empowered-parent-coaching.html">Empowered Parent Coaching</a></li><li><a href="leadership-future-success-coaching.html">Leadership & Future Success Coaching</a></li><li><a href="laser-soul-coaching.html">Laser Soul Coaching</a></li></ul>
+    </nav>
+    <div class="menu-foot">
+      <a class="btn btn--coral" href="https://www.heysarahburnett.com/contact">Book a free 20-min discovery call <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <a class="btn btn--ghost" href="tel:+14072748727" style="--fg:#fff"><svg aria-hidden="true"><use href="#i-phone"/></svg> (407) 274-8727</a>
+    </div>
+  </div>
+</dialog>
+
+<main id="main" tabindex="-1">
+<section class="page-hero" aria-labelledby="ph-title">
+  <div class="ph-media" data-parallax="0.12" style="--focus:50% 30%"><picture><source type="image/avif" srcset="assets/img/sarah-desk-wide-480.avif 480w, assets/img/sarah-desk-wide-800.avif 800w, assets/img/sarah-desk-wide-1200.avif 1200w, assets/img/sarah-desk-wide-1800.avif 1800w" sizes="100vw"><source type="image/webp" srcset="assets/img/sarah-desk-wide-480.webp 480w, assets/img/sarah-desk-wide-800.webp 800w, assets/img/sarah-desk-wide-1200.webp 1200w, assets/img/sarah-desk-wide-1800.webp 1800w" sizes="100vw"><img src="assets/img/sarah-desk-wide-800.jpg" alt="Sarah smiling at her desk beside a laptop and plants" width="1800" height="1823" fetchpriority="high" decoding="async" style="background:url(data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAYABgDASIAAhEBAxEB/8QAGQABAAMBAQAAAAAAAAAAAAAAAAQFBgID/8QAIxAAAgIBBAEFAQAAAAAAAAAAAQIAAxEEEiExEwUyQYGRof/EABYBAQEBAAAAAAAAAAAAAAAAAAIAAf/EABgRAQEBAQEAAAAAAAAAAAAAAAABERIh/9oADAMBAAIRAxEAPwDWZkCr1MWa9qMLsFhqBzzuAz+dyJriV1Ksb7WQL7FGSeRwJxVVWNYbUBU22ra28Y8eB/SYOvcKRoIkUa2tr1qqIbPbDoRGL08NZ7QSu19dtbr4HwX4VcLw33ESki2rKulQi71G75iImZFr/9k=) center/cover"></picture></div>
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li><span aria-current="page">Work with me</span></li></ol></nav>
+    <p class="eyebrow">Work with me</p>
+    <h1 id="ph-title">One foot in front <em class="script">of the other</em></h1>
+    <p class="lede">All it takes is that first leap into totally confusing territory. One foot in front of the other. I’ll help you figure out the rest.</p>
+    <div class="btn-row"><a class="btn btn--coral magnetic" href="#offerings">Explore offerings <svg aria-hidden="true"><use href="#i-arrow"/></svg></a><a class="btn btn--ghost" href="#approach">My approach</a></div>
+  </div>
+</section>
+
+<section class="section" id="approach" aria-labelledby="ap-title">
+  <div class="wrap split">
+    <div class="split-media" style="--focus:50% 35%"><picture><source type="image/avif" srcset="assets/img/sarah-pink-seated-480.avif 480w, assets/img/sarah-pink-seated-800.avif 800w, assets/img/sarah-pink-seated-1200.avif 1200w, assets/img/sarah-pink-seated-1800.avif 1800w" sizes="(min-width: 62rem) 40vw, 90vw"><source type="image/webp" srcset="assets/img/sarah-pink-seated-480.webp 480w, assets/img/sarah-pink-seated-800.webp 800w, assets/img/sarah-pink-seated-1200.webp 1200w, assets/img/sarah-pink-seated-1800.webp 1800w" sizes="(min-width: 62rem) 40vw, 90vw"><img src="assets/img/sarah-pink-seated-800.jpg" alt="Sarah in a pink sweater, seated in a white armchair" width="1800" height="2700" loading="lazy" decoding="async" style="background:url(data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAkABgDASIAAhEBAxEB/8QAGQABAAMBAQAAAAAAAAAAAAAAAAIFBgME/8QAJRAAAQQBBQABBQEAAAAAAAAAAQACAxEEBRIhMUEVEyIjUWFx/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQME/8QAHBEBAQACAgMAAAAAAAAAAAAAAQACAxExEyFB/9oADAMBAAIRAxEAPwDVnoKJ6UielnfkMhscWeZyYnyU+F1bQwuoV/R2hZDmvHiwiOPHfqJi5alK+HClfHW4D1YUTzfHvxCfxtlBFhbvUHNGHJuFgiq/aysmkzhxc3lzjf0/f9T6+2vR40TLuv8ASpnzYLDI7c4Eiz3QRc9K+3HYyiCB6K59RFn2I5qdVjKwTQyMf1V8eKgkvaX7jvBoG+eERVwoZ3vwHukxWyPJLnckoiKNW//Z) center/cover"></picture></div>
+    <div>
+      <p class="eyebrow">My approach</p>
+      <h2 id="ap-title">Every person is on a unique <em class="script">journey</em></h2>
+      <p>My offerings range from 1:1 coaching, psychedelic integration, hypnotherapy, and self-guided online courses, to soulful group retreats with past-life regression, embodied movement, masterclass teachings, healing integration circles, and sacred plant medicine.</p>
+      <div class="clamp" id="ap-more" data-clamp>
+        <p>In all my offerings, I embody a gentle, collaborative, and compassionate approach. As an ally on your journey of self-discovery, I am profoundly curious about every aspect of your being. While my approach is rooted in somatic foundations and subconscious mind rewiring, it does not disregard the cognitive process of meaning-making. My coaching model is efficient because we are leveraging and tapping into your subconscious mind which is the wisest brain in the room – not the conscious mind of me or you, but the wisdom in your subconscious mind. The one that has every memory of every moment, every feeling and belief, a living record of your life.</p>
+        <p>I invite you to embrace mindful observation as a replacement for cognitive reflection. I draw from a diverse range of approaches such as hypnosis, neuro-linguistic programming, somatic experiencing, soul lessons, breathwork, mindful movement, and in-depth field experience with psychedelic facilitation to support you in digesting your experience, deepening your understanding and cultivating tangible, long-lasting change in your life. For you, I will weave together a rich tapestry of techniques to support your personal growth and transformation.</p>
+      </div>
+      <button class="read-more" type="button" aria-expanded="false" aria-controls="ap-more">Read more</button>
+      <ul class="ph-chips on-light" aria-label="Modalities"><li>Hypnosis</li><li>NLP</li><li>Somatic experiencing</li><li>Soul lessons</li><li>Breathwork</li><li>Mindful movement</li></ul>
+    </div>
+  </div>
+</section>
+
+<section class="section on-dark" aria-labelledby="nlp-title">
+  <div class="wrap">
+    <figure class="big-quote reveal"><blockquote><p>What we focus on expands, and both real and imagined scenarios can have the same impact on the brain.</p></blockquote></figure>
+    <div class="section-head"><p class="eyebrow">The foundation</p><h2 id="nlp-title">Neuro-Linguistic <em class="script">Programming</em></h2></div>
+    <p>NLP is a foundational tool woven throughout all of my coaching methods. It’s applicable and profoundly transformational with a wide array of clients, because it’s an extremely gentle way to tap into the subconscious mind.</p>
+    <div class="clamp" id="nlp-more" data-clamp>
+      <p>We know the way we think affects our emotions, thoughts, and behaviors. When I use NLP, I use imagery and language to guide my clients into a very light hypnotic trance where they can access the past, present, or project into the future. By going back to past painful experiences, you can heal limiting beliefs or decisions you made about yourself in moments of pain or trauma. And, by forecasting into the future, you can visualize the ways you want to show up as your best self, navigating specific future challenges with confidence. These NLP visualizations allow you to move beyond discussion and into embodiment, giving your brain an opportunity to drill in new neural pathways so that healthy thought patterns and behaviors become automatic.</p>
+    </div>
+    <button class="read-more" type="button" aria-expanded="false" aria-controls="nlp-more">Read more</button>
+  </div>
+</section>
+
+<section class="section" id="offerings" aria-labelledby="of-title">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Offerings</p><h2 id="of-title">Find your <em class="script">path</em></h2></div>
+    <ul class="card-grid">
+      <li class="card reveal"><div class="card-img"><picture><source type="image/avif" srcset="assets/img/sarah-pink-portrait-480.avif 480w, assets/img/sarah-pink-portrait-800.avif 800w, assets/img/sarah-pink-portrait-1200.avif 1200w, assets/img/sarah-pink-portrait-1800.avif 1800w" sizes="(min-width: 48rem) 30vw, 90vw"><source type="image/webp" srcset="assets/img/sarah-pink-portrait-480.webp 480w, assets/img/sarah-pink-portrait-800.webp 800w, assets/img/sarah-pink-portrait-1200.webp 1200w, assets/img/sarah-pink-portrait-1800.webp 1800w" sizes="(min-width: 48rem) 30vw, 90vw"><img src="assets/img/sarah-pink-portrait-800.jpg" alt="Sarah smiling in a pink sweater" width="1800" height="2173" loading="lazy" decoding="async" style="background:url(data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAdABgDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQGBQL/xAAmEAABAwQBAwQDAAAAAAAAAAABAgMRAAQSIQUUQXETFTEyM1GB/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgAD/8QAHREAAwACAgMAAAAAAAAAAAAAAAECAxEEEiExQf/aAAwDAQACEQMRAD8Aqz2rD90uAW7lRQbRxzDDGFIEwFT332rT5B5VvZuOJGSgNCobq3VcWqzInBzSp2BM1NP4axjdLZeq+P7RSXG3C7myQ45GUlJI7xRUCpctyxjkMOjcz+sVHucc+nJzCUKM4xvzFWT7YfYWgmIEg/oisNbjv5fUOY0D4pSm/Q8fIeLxob4iBaoSDOpPk0V1YrLtuHVQCrcAQKKAKfZ7P//Z) center/cover"></picture></div><h3>Transformational Mindset Coaching</h3><p>Nervous about an upcoming event, or anxious to have a hard conversation? Book this 2-hour session to clear out the limiting messages spiraling in your mind and feel a renewed sense of confidence and clarity.</p><a class="btn magnetic" href="transformational-mindset-coaching.html">Discover more <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+      <li class="card reveal"><div class="card-img"><picture><source type="image/avif" srcset="assets/img/hands-plant-480.avif 480w, assets/img/hands-plant-800.avif 800w, assets/img/hands-plant-1200.avif 1200w" sizes="(min-width: 48rem) 30vw, 90vw"><source type="image/webp" srcset="assets/img/hands-plant-480.webp 480w, assets/img/hands-plant-800.webp 800w, assets/img/hands-plant-1200.webp 1200w" sizes="(min-width: 48rem) 30vw, 90vw"><img src="assets/img/hands-plant-800.jpg" alt="Hands holding a fan of oracle cards beside a plant" width="1200" height="1800" loading="lazy" decoding="async" style="background:url(data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAkABgDASIAAhEBAxEB/8QAGQABAAMBAQAAAAAAAAAAAAAAAAIFBgMB/8QAJhAAAgEDAwUAAgMAAAAAAAAAAQIDAAQREiExBRMiQVEUYYGR4f/EABcBAQEBAQAAAAAAAAAAAAAAAAIBAAP/xAAaEQADAAMBAAAAAAAAAAAAAAAAARECEiFC/9oADAMBAAIRAxEAPwDnZpLcXbxq7BlwSxOQv6qGUhvHWdY4wMjuK2QDXbpt6mksVfU6+ZB4IFQimGpgzAI3KkYrjryouLh5PJHBCZFcEKpOOQaVV36G2geAjUjNqjYevopSxVQ3wnYtJ3wkI7mvYLxqX3/NWMkkUpHh5Ix3zt8/uqPp8hh6hG4yNDc/K2sNjGyTFFTTPhiuPfvejHtCSY0zrw98GBxghNj8Oc0q7a3FojK8eVA2H+0p6smxjfyZEhYrpBY4JxztV1P1e7it7cIyjwBzjelK3pG8sjN168ktTnt5yBq078UpSkE//9k=) center/cover"></picture></div><h3>Psychedelic Integration Coaching</h3><p>Psychedelic experiences can stir up powerful emotions and bring to the surface unresolved traumas and childhood wounds. I am trauma-trained in several modalities and create a safe and non-judgmental space for you to process them.</p><a class="btn magnetic" href="psychedelic-integration-coaching.html">Discover more <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+      <li class="card reveal"><div class="card-img"><picture><source type="image/avif" srcset="assets/img/sarah-oils-seated-480.avif 480w, assets/img/sarah-oils-seated-800.avif 800w, assets/img/sarah-oils-seated-1200.avif 1200w, assets/img/sarah-oils-seated-1800.avif 1800w" sizes="(min-width: 48rem) 30vw, 90vw"><source type="image/webp" srcset="assets/img/sarah-oils-seated-480.webp 480w, assets/img/sarah-oils-seated-800.webp 800w, assets/img/sarah-oils-seated-1200.webp 1200w, assets/img/sarah-oils-seated-1800.webp 1800w" sizes="(min-width: 48rem) 30vw, 90vw"><img src="assets/img/sarah-oils-seated-800.jpg" alt="Sarah gesturing joyfully at a table with an essential oil diffuser" width="1800" height="2700" loading="lazy" decoding="async" style="background:url(data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAkABgDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAYCAwQF/8QAJhAAAQMDAwQCAwAAAAAAAAAAAQACAwQRIRITIgUxQWEjUYGRwf/EABgBAAMBAQAAAAAAAAAAAAAAAAABAgME/8QAGREBAQADAQAAAAAAAAAAAAAAAAERMUFR/9oADAMBAAIRAxEAPwBrCkqd5u6Y78gLlcOuq5G19Q8GQPgdFtNBw4HuLeb5/SLRJkxBCixwcLjsUJkW6iqkZPU2J5OsPvHhcetrgKtrYHa2/Dd2SQW+LppMNPM7XI3Tk4OL+0nT7zKt7GxljBO4tdp/v4Wcnq7caPPTnsdT3iN49R0n1dCq6Rpj6dA3i3gLj2hWlVYEZWKrpIphy1C7hkFCFz9b8aacbbTGOzMC/dCEKif/2Q==) center/cover"></picture></div><h3>Past-Life Regression Therapy</h3><p>A therapeutic hypnotic technique that aims to access and explore memories and experiences from previous lifetimes to unlock transformational healing.</p><a class="btn magnetic" href="past-life-regression-therapy.html">Discover more <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+      <li class="card reveal"><div class="card-img"><picture><source type="image/avif" srcset="assets/img/child-play-480.avif 480w, assets/img/child-play-800.avif 800w, assets/img/child-play-1200.avif 1200w, assets/img/child-play-1800.avif 1800w" sizes="(min-width: 48rem) 30vw, 90vw"><source type="image/webp" srcset="assets/img/child-play-480.webp 480w, assets/img/child-play-800.webp 800w, assets/img/child-play-1200.webp 1200w, assets/img/child-play-1800.webp 1800w" sizes="(min-width: 48rem) 30vw, 90vw"><img src="assets/img/child-play-800.jpg" alt="A young boy playing with toys at a table" width="1800" height="1202" loading="lazy" decoding="async" style="background:url(data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAQABgDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEAgX/xAAiEAACAgEEAQUAAAAAAAAAAAABAgMRAAQSITEFEyJxkcH/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABcRAAMBAAAAAAAAAAAAAAAAAAABESH/2gAMAwEAAhEDEQA/AOtvjvazciiQosjN6GYTwuZIwhawtdED9yMI7EESSDctUpoH5ymPS6l9MI/T5XsMav6ydZWKCdPLsaRav3YY1PFTlnaVlF8VfYrvDFoMP//Z) center/cover"></picture></div><h3>Empowered Parent Coaching</h3><p>Parents are the therapeutic agent for change. With a toolbox full of new tangible skills, you’ll feel the family dynamic completely shift.</p><a class="btn magnetic" href="empowered-parent-coaching.html">Discover more <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+      <li class="card reveal"><div class="card-img"><picture><source type="image/avif" srcset="assets/img/sarah-corporate-480.avif 480w, assets/img/sarah-corporate-800.avif 800w, assets/img/sarah-corporate-1200.avif 1200w, assets/img/sarah-corporate-1800.avif 1800w" sizes="(min-width: 48rem) 30vw, 90vw"><source type="image/webp" srcset="assets/img/sarah-corporate-480.webp 480w, assets/img/sarah-corporate-800.webp 800w, assets/img/sarah-corporate-1200.webp 1200w, assets/img/sarah-corporate-1800.webp 1800w" sizes="(min-width: 48rem) 30vw, 90vw"><img src="assets/img/sarah-corporate-800.jpg" alt="Sarah seated on a white ottoman beside pampas grass" width="1800" height="2700" loading="lazy" decoding="async" style="background:url(data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAkABgDASIAAhEBAxEB/8QAGQABAAMBAQAAAAAAAAAAAAAAAAQFBgID/8QAJxAAAQMDAwIHAQAAAAAAAAAAAQACAwQREgUhMUFRBhMiQmFxgZH/xAAWAQADAAAAAAAAAAAAAAAAAAAAAQL/xAAZEQEBAAMBAAAAAAAAAAAAAAAAAQIREjH/2gAMAwEAAhEDEQA/ANZZFArK9rGFrSQcgCewPVRZ9Xf50cUbmMMji0Ei/AJvb8U9RXNXQRRqCqbV0kU7fe25HYoqSgzac0FoLyR0Fv4s7rDnUdWwQYOIYfWW36b/AKtPqc5gpJJBsWt2PzwFSaVQCuAmrcniR1rXtccImE9pZZ3ep6sPC7nmgLXi2DrYk7j7RWlHp1Np8bm07XDIgnJxJRBvCsibNJFE/eN98h3su4qaKPARtwDeAOERIJpvbckoiIN//9k=) center/cover"></picture></div><h3>Leadership &amp; Future Success Coaching</h3><p>1:1 business coaching and corporate mental health keynotes designed to eliminate fear, anxiety and past negative experiences for high-performing leaders.</p><a class="btn magnetic" href="leadership-future-success-coaching.html">Discover more <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+      <li class="card reveal"><div class="card-img"><picture><source type="image/avif" srcset="assets/img/sarah-petey-garden-480.avif 480w, assets/img/sarah-petey-garden-800.avif 800w, assets/img/sarah-petey-garden-1200.avif 1200w, assets/img/sarah-petey-garden-1800.avif 1800w" sizes="(min-width: 48rem) 30vw, 90vw"><source type="image/webp" srcset="assets/img/sarah-petey-garden-480.webp 480w, assets/img/sarah-petey-garden-800.webp 800w, assets/img/sarah-petey-garden-1200.webp 1200w, assets/img/sarah-petey-garden-1800.webp 1800w" sizes="(min-width: 48rem) 30vw, 90vw"><img src="assets/img/sarah-petey-garden-800.jpg" alt="Sarah and her mom Petey laughing together in a tropical garden" width="1800" height="1325" loading="lazy" decoding="async" style="background:url(data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAASABgDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAUCAQT/xAAlEAACAgIBAgYDAAAAAAAAAAABAgADBBESIUEFEyIxUWEjcbH/xAAXAQADAQAAAAAAAAAAAAAAAAAAAgMB/8QAHREAAgICAwEAAAAAAAAAAAAAAAECERIxITKBkf/aAAwDAQACEQMRAD8Aovk867LK3YFNpoqOJMltZlv4la9NoVzSNsVHQDc8yZTjKtryCypyJYE7AYyhjW0c7C5HrGuR+P3EwcYWti28qx9JtWbn5LFFyHs0/VhobX5iY8NyK8PIfl0RQS++410H2YhJtaLzgo1ydtH5cw9/N95uv2A7FBESstAuvwisT5i/e/7ERMRF7P/Z) center/cover"></picture></div><h3>Laser Soul Coaching</h3><p>Looking for a certified guide on your spiritual journey? Soul Coaches are directly trained by Petey Silveira to help you understand your soul lessons, purpose, and personal growth.</p><a class="btn magnetic" href="laser-soul-coaching.html">Discover more <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section cta-band" aria-labelledby="cta-title">
+  <div class="cb-media"><picture><source type="image/avif" srcset="assets/img/retreat-costa-rica-480.avif 480w, assets/img/retreat-costa-rica-800.avif 800w, assets/img/retreat-costa-rica-1081.avif 1081w" sizes="100vw"><source type="image/webp" srcset="assets/img/retreat-costa-rica-480.webp 480w, assets/img/retreat-costa-rica-800.webp 800w, assets/img/retreat-costa-rica-1081.webp 1081w" sizes="100vw"><img src="assets/img/retreat-costa-rica-800.jpg" alt="An open-air retreat lodge in the Costa Rican jungle" width="1081" height="1418" loading="lazy" decoding="async" style="background:url(data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAfABgDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEBQL/xAAgEAABBAEFAQEAAAAAAAAAAAABAAIDESESIjFBURQE/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQIA/8QAGREBAAMBAQAAAAAAAAAAAAAAAAERIRIx/9oADAMBAAIRAxEAPwDAkkZG0tZkk4SZZdVWMrgyE80nxNbLnZfhdSmqMaUxr33paXAc10hXxtliY4RsGnvSQbQhXKD53FgOL88TYTHE9hdzVOBzlTfUSACeOlwZrW2fUtVkn5nynbRvG6rQsoTV0hapNv/Z) center/cover"></picture></div>
+  <div class="wrap">
+    <h2 id="cta-title">Soul Journeys <em class="script">Retreats</em></h2>
+    <p>An integrated past-life regression healing experience, combined with yoga, bodywork, meditation, and therapeutic reflection.</p>
+    <div class="btn-row"><a class="btn btn--coral magnetic" href="https://www.souljourneysretreats.com/retreats">Visit souljourneysretreats.com <svg width="16" height="16" aria-hidden="true"><use href="#i-ext"/></svg></a><a class="btn btn--ghost" href="https://www.heysarahburnett.com/contact">Contact Sarah</a></div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <img src="assets/img/logo-507.png" width="507" height="171" alt="Sarah Burnett" loading="lazy">
+        <p>Licensed Mental Health Counselor · License #MH16161</p>
+        <p style="font-size:.9rem">Coaching and integration services aren't a substitute for emergency care. In crisis, call or text <a href="tel:988">988</a>.</p>
+      </div>
+      <div><h2>Explore</h2><ul><li><a href="index.html#about">About</a></li><li><a href="services.html">Work with me</a></li><li><a href="index.html#kap">Ketamine-assisted therapy</a></li><li><a href="index.html#stories">Stories</a></li><li><a href="index.html#retreats">Retreats</a></li><li><a href="index.html#podcast">Podcast</a></li></ul></div>
+      <div><h2>Offerings</h2><ul><li><a href="transformational-mindset-coaching.html">Transformational Mindset Coaching</a></li><li><a href="psychedelic-integration-coaching.html">Psychedelic Integration Coaching</a></li><li><a href="past-life-regression-therapy.html">Past-Life Regression Therapy</a></li><li><a href="empowered-parent-coaching.html">Empowered Parent Coaching</a></li><li><a href="leadership-future-success-coaching.html">Leadership &amp; Future Success Coaching</a></li><li><a href="laser-soul-coaching.html">Laser Soul Coaching</a></li></ul></div>
+      <div><h2>More</h2><ul><li><a href="events.html">Yoga &amp; events</a></li><li><a href="shop.html">Shop dōTERRA</a></li><li><a href="corporate-wellness.html">Corporate wellness</a></li><li><a href="speaking.html">Speaking</a></li><li><a href="https://www.heysarahburnett.com/resources">Resources</a></li><li><a href="https://www.heysarahburnett.com/blog">Blog</a></li><li><a href="https://www.heysarahburnett.com/plans-pricing">Plans &amp; pricing</a></li><li><a href="https://www.instagram.com/heysarahburnett/">Instagram</a></li></ul></div>
+      <div><h2>Contact</h2><ul><li><a href="tel:+14072748727">(407) 274-8727</a></li><li><a href="mailto:sarah@heysarahburnett.com">Email Sarah</a></li><li><a href="index.html#contact">Contact &amp; booking</a></li></ul></div>
+    </div>
+    <div class="legal">
+      <span>© <span id="year">2026</span> Sarah Burnett</span>
+      <span><a href="https://www.heysarahburnett.com/terms-and-agreements">Terms &amp; coaching disclaimer</a> · <a href="https://www.heysarahburnett.com/privacy-policy">Privacy</a> · <a href="accessibility.html">Accessibility</a></span>
+      <button class="motion-toggle" type="button" aria-pressed="false" id="motion-toggle">Reduce motion</button>
+    </div>
+  </div>
+</footer>
+
+<nav class="sticky-cta" aria-label="Quick booking">
+  <a class="btn btn--coral" href="https://www.heysarahburnett.com/contact">Book a free 20-min call</a>
+  <a class="btn call" href="tel:+14072748727" aria-label="Call Sarah, (407) 274-8727"><svg aria-hidden="true"><use href="#i-phone"/></svg></a>
+</nav>
+<script src="assets/js/page.js" type="module"></script>
+</body>
+</html>
